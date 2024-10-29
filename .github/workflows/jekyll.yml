@@ -19,7 +19,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7  # Especifica la versión de Ruby que deseas usar
+          ruby-version: 3.1.2  # Especifica la versión de Ruby que deseas usar
       - name: Install dependencies
         run: |
           bundle install
