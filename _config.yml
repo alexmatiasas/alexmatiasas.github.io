@@ -23,7 +23,7 @@ subtitle                 : Version 1.0
 name                     : "Manuel Alejandro Matías Astorga"
 description              : "A showcase of my Data Science and Machine Learning projects."
 url                      : "https://alexmatiasas.github.io"
-baseurl                  : "/minimal-mistakes"
+baseurl                  : "/"
 repository               : "https://github.com/alexmatiasas/alexmatiasas.github.io/"
 teaser                   : "assets/images/teaser.jpg"
 logo                     : "/assets/images/logo.png"
