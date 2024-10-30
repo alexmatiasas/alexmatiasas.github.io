@@ -18,10 +18,11 @@ main:
     url: /tags/
     description: "All tags"
   - title: "Collections"
-    url: /collection-archive/
+    url: /categories/
     description: "All collections"
   - title: "Contact"
     url: /contact
+    description: "Contact page"
   - title: "External Link"
     url: https://google.com
     target: _blank

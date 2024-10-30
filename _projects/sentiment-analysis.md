@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Sentiment analysis"
 excerpt: "Using machine learning to detect sentiments."
 header:
@@ -10,6 +11,13 @@ tags:
   - Classification
   - sentiment analysis
 date: 2023-10-27
+sidebar:
+  title: "Projects"
+  nav: "projects-sidebar"
+toc: true
+toc_sticky: true
+toc_label: "Contents"
+author_profile: true
 ---
 
 # Sentiment Analysis Project

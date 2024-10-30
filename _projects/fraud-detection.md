@@ -1,8 +1,9 @@
 ---
+layout: single
 title: "Fraud Detection with ML"
 excerpt: "Using machine learning to detect fraudulent transactions."
 header:
-  teaser: "/assets/images/teaser.jpg"  # Imagen de portada del proyecto
+  teaser: "/assets/images/fraud-detection.jpg"  # Imagen de portada del proyecto
 categories:
   - Machine Learning
   - Data Science
@@ -10,6 +11,12 @@ tags:
   - Classification
   - Fraud Detection
 date: 2023-10-27
+sidebar:
+  title: "Projects"
+  nav: "projects-sidebar"
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 ## Project Overview

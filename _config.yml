@@ -25,7 +25,7 @@ description              : "A showcase of my Data Science and Machine Learning p
 url                      : "https://alexmatiasas.github.io"
 baseurl                  : "/"
 repository               : "https://github.com/alexmatiasas/alexmatiasas.github.io/"
-teaser                   : "assets/images/teaser.jpg"
+teaser                   : "/assets/images/teaser.jpg"
 logo                     : "/assets/images/logo.png"
 masthead_title           : "Data Science Portfolio"
 breadcrumbs              : true
@@ -34,7 +34,7 @@ enable_copy_code_button  : true
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -337,3 +337,8 @@ defaults:
         nav: "/data/projects-sidebar"
       toc: true
       toc_sticky: true
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/

@@ -1,6 +1,6 @@
 - title: "Overview"
   url: "/projects/"
 - title: "Project 1: Fraud Detection"
-  url: "/projects/fraud-detection"
+  url: "/_projects/fraud-detection"
 - title: "Project 2: Sentiment Analysis"
-  url: "/projects/sentyment-analysis"
+  url: "/_projects/sentiment-analysis"
