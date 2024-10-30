@@ -1,23 +1,27 @@
 ---
 layout: single
-title: "Fraud Detection with ML"
-excerpt: "Using machine learning to detect fraudulent transactions."
+title: "Sentiment analysis"
+excerpt: "Using machine learning to detect sentiments."
 header:
-  teaser: "/assets/images/fraud-detection.jpg"  # Imagen de portada del proyecto
-categories:
-  - Machine Learning
-  - Data Science
-tags:
-  - Classification
-  - Fraud Detection
+  teaser: "/assets/images/teaser.jpg"  # Imagen de portada del proyecto
 date: 2023-10-27
 sidebar:
   title: "Projects"
   nav: "projects-sidebar"
 toc: true
 toc_sticky: true
-toc_label: "Table of Contents"
+toc_label: "Contents"
+author_profile: true
+related: true
+categories:
+  - Machine Learning
+  - Data Science
+tags:
+  - Classification
+  - Sentiment analysis
 ---
+
+# Sentiment Analysis Project
 
 ## Project Overview
 This project uses machine learning algorithms to detect fraudulent transactions.

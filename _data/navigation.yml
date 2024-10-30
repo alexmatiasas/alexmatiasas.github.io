@@ -3,7 +3,7 @@ main:
 #  - title: "Quick-Start Guide"
 #    url: /docs/quick-start-guide/
   - title: "Home"
-    url: "/"
+    url: /
     description: "Home page"
   - title: "About"
     url: /about
@@ -26,3 +26,13 @@ main:
   - title: "External Link"
     url: https://google.com
     target: _blank
+
+projects-sidebar:
+  - title: "All Projects"
+    url: /projects/
+  - title: "Project 1: Fraud Detection"
+    url: /projects/fraud-detection
+  - title: "Customer Segmentation for E-commerce"
+    url: /projects/sentiment-analysis
+  - title: "Time Series Forecasting for Sales Data"
+    url: /projects/time-series-forecasting/

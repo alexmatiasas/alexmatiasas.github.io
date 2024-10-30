@@ -298,15 +298,27 @@ tag_archive:
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#    enabled:
+#      - categories
+#      - tags
+#    layouts:
+#      category: archive-taxonomy
+#      tag: archive-taxonomy
+#    permalinks:
+#      category: /categories/:name/
+#      tag: /tags/:name/
+
+jekyll-archives:
+  enabled: true
+  layouts:
+    tag: archive           # Usa el layout de archivo para tags
+    category: archive       # Usa el layout de archivo para categorías
+  permalinks:
+    tag: /tag/:name/
+    category: /category/:name/
+  collections:
+    - posts
+    - projects             # Asegura que tanto posts como projects se incluyan
 
 
 # HTML Compression
@@ -325,20 +337,50 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
       toc: true
       toc_sticky: true
   - scope:
       path: ""
-      type: "projects"
+      type: projects
     values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
       sidebar:
-        nav: "/data/projects-sidebar"
+        title: "Projects"
+        nav: "projects-sidebar"
       toc: true
       toc_sticky: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 collections:
-  projects:
+  posts:
+    type: posts
     output: true
     permalink: /:collection/:name/
+    
+  # posts:
+  #   output: true
+  #   permalink: /:collection/:name/
+  #   type: posts
+  # categories:
+  #   output: true
+  #   permalink: /:collection/:name/
+  #   type: posts
