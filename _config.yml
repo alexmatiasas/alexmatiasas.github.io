@@ -124,7 +124,7 @@ author:
       url: "mailto: alejandromatiasastorga@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-globe"
-      url: "http://127.0.0.1:4000/minimal-mistakes/"
+      url: "/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/alexmatiasas"
