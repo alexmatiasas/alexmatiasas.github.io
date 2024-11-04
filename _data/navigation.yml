@@ -17,22 +17,31 @@ main:
   - title: "Tags"
     url: /tags/
     description: "All tags"
-  - title: "Collections"
+  - title: "Categories"
     url: /categories/
-    description: "All collections"
+    description: "All categories"
   - title: "Contact"
     url: /contact
     description: "Contact page"
-  - title: "External Link"
-    url: https://google.com
-    target: _blank
+  # - title: "External Link"
+  #   url: https://google.com
+  #   target: _blank
 
 projects-sidebar:
   - title: "All Projects"
     url: /projects/
-  - title: "Project 1: Fraud Detection"
-    url: /projects/fraud-detection
-  - title: "Customer Segmentation for E-commerce"
-    url: /projects/sentiment-analysis
-  - title: "Time Series Forecasting for Sales Data"
-    url: /projects/time-series-forecasting/
+    children:
+      - title:  <i class="fa fa-user-secret" aria-hidden="true"></i> Fraud Detection
+        url: /posts/2016-07-20-fraud-detection
+        description: "Detecting fraudulent transactions"
+        children:
+        - title: Project Overview
+          url: /posts/2016-07-20-fraud-detection#project-overview
+        - title: Dataset and Preprocessing
+          url: /posts/2016-07-20-fraud-detection#dataset-and-preprocessing  
+        
+      - title: <i class="fa fa-heart" aria-hidden="true"></i> Sentiment Analysis
+        url: /posts/2016-07-20-sentiment-analysis
+        description: "Sentiment analysis"
+      - title: "Time Series Forecasting for Sales Data"
+        url: /projects/time-series-forecasting/
