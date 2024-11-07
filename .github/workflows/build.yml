@@ -51,7 +51,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # O la rama principal donde esté tu web
+      - main  
 
 jobs:
   build:
