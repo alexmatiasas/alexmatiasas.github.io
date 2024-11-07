@@ -33,3 +33,4 @@ _site
 
 # environment variables
 .env
+assets/js/contact.js
