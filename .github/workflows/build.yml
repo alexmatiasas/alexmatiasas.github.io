@@ -68,7 +68,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo "FORMSPREE_ID=$FORMSPREE_ID" >> .env
+          echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
           bundle install
         
       - name: Build Jekyll site
