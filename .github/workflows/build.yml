@@ -56,7 +56,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Cambia "main" si tu rama principal tiene otro nombre
+      - main  
 
 jobs:
   build:
@@ -64,7 +64,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Actualizar a v3 para Node 16 o superior
+        uses: actions/checkout@v3 
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -74,16 +74,16 @@ jobs:
 
       - name: Install dependencies
         env:
-          FORMSPREE_ID: ${{ secrets.FORMSPREE_ID }}  # Usar secreto de GitHub como variable de entorno
+          FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }} 
         run: |
-          echo "FORMSPREE_ID=$FORMSPREE_ID" >> .env
+          echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
           bundle install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4  # Actualizar a v4 para Node 16 o superior
+        uses: peaceiris/actions-gh-pages@v4  
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
