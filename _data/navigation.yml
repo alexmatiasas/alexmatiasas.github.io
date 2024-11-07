@@ -31,17 +31,33 @@ projects-sidebar:
   - title: "All Projects"
     url: /projects/
     children:
+      - title: <i class="fa fa-font" aria-hidden="true"></i> Language Model for Text Generation
+        url: /posts/2016-07-20-text-generation
+        description: "Trained a language model to generate human-like text based on input prompts, showcasing advanced NLP capabilities."
+      - title: <i class="fa fa-heart" aria-hidden="true"></i> Sentiment Analysis
+        url: /posts/2016-07-20-sentiment-analysis
+        description: "Built a sentiment analysis model to classify text as positive or negative, useful for customer feedback and social media analysis."
+      - title: <i class="fa fa-pencil" aria-hidden="true"></i> Custom Language Model
+        url: /posts/2016-07-20-language-model
+        description: "Developed a custom language model for specific language tasks, improving predictive text capabilities."
+      - title: <i class="fa fa-paw" aria-hidden="true"></i> Image Classification
+        url: /posts/2016-07-20-image-classification
+        description: "Developed a convolutional neural network (CNN) to classify images into predefined categories with high accuracy."
+      - title: <i class="fa fa-smile-o" aria-hidden="true"></i> Image Recognition
+        url: /posts/2016-07-20-image-recognition
+        description: "Built an image recognition system to identify objects and landmarks in images, demonstrating skills in deep learning for computer vision."
+      - title: <i class="fa fa-check-square-o" aria-hidden="true"></i> Object Detection System
+        url: /posts/2016-07-20-object-detection
+        description: "Developed a real-time object detection model using YOLO to identify and classify objects in video streams, optimized for high-speed processing."
+      - title: <i class="fa fa-check" aria-hidden="true"></i> Recommendation System
+        url: /posts/2016-07-20-recomendation-system
+        description: "Created a personalized recommendation system using collaborative filtering to enhance customer engagement for e-commerce."
+      - title: <i class="fa fa-bar-chart" aria-hidden="true"></i> Real-Time Data Processing
+        url: /posts/2016-07-20-real-time-data-processing
+        description: "Designed a pipeline for processing data streams in real time, integrating Apache Kafka and Spark for scalable processing."
       - title:  <i class="fa fa-user-secret" aria-hidden="true"></i> Fraud Detection
         url: /posts/2016-07-20-fraud-detection
         description: "Detecting fraudulent transactions"
-        children:
-        - title: Project Overview
-          url: /posts/2016-07-20-fraud-detection#project-overview
-        - title: Dataset and Preprocessing
-          url: /posts/2016-07-20-fraud-detection#dataset-and-preprocessing  
-        
-      - title: <i class="fa fa-heart" aria-hidden="true"></i> Sentiment Analysis
-        url: /posts/2016-07-20-sentiment-analysis
-        description: "Sentiment analysis"
-      - title: "Time Series Forecasting for Sales Data"
-        url: /projects/time-series-forecasting/
+      - title:  <i class="fa fa-user-o" aria-hidden="true"></i> Use Patterns Analysis
+        url: /posts/2016-07-20-use-patterns
+        description: "Analyzed user behavior data to identify patterns and trends, providing actionable insights for customer engagement."

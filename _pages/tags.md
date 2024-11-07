@@ -2,7 +2,7 @@
 title: "Tags"
 author_profile: true
 layout: tags
-# collection: tags
+collection: tags
 permalink: /tags/
 entries_layout: grid  # Usa grid para una cuadrícula de proyectos
 classes: wide
