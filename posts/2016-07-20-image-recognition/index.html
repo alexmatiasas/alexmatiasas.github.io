@@ -1,0 +1,877 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Image recognition - Manuel Alejandro Matías Astorga Data Science Portfolio</title>
+<meta name="description" content="Using machine learning to recognition.">
+
+
+  <meta name="author" content="Manuel Alejandro Matías Astorga">
+  
+  <meta property="article:author" content="Manuel Alejandro Matías Astorga">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Manuel Alejandro Matías Astorga Data Science Portfolio">
+<meta property="og:title" content="Image recognition">
+<meta property="og:url" content="https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/">
+
+
+  <meta property="og:description" content="Using machine learning to recognition.">
+
+
+
+  <meta property="og:image" content="https://alexmatiasas.github.io/assets/images/image-recognition.jpg">
+
+
+
+  <meta name="twitter:site" content="@alexmatiasas">
+  <meta name="twitter:title" content="Image recognition">
+  <meta name="twitter:description" content="Using machine learning to recognition.">
+  <meta name="twitter:url" content="https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://alexmatiasas.github.io/assets/images/image-recognition.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-10-27T00:00:00-06:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="Data Science Portfolio"></a>
+        
+        <a class="site-title" href="/">
+          Data Science Portfolio
+          <span class="site-subtitle">by Manuel Alejandro Matías Astorga</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                 title="Home page"
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about"
+                 title="About page"
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                 title="All projects"
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                 title="All blog posts"
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                 title="All tags"
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                 title="All categories"
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact"
+                 title="Contact page"
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/image-recognition.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Image recognition
+
+        
+      </h1>
+      
+        <p class="page__lead">Using machine learning to recognition.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#posts" itemprop="item"><span itemprop="name">Posts</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Image recognition</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://alexmatiasas.github.io/">
+        <img src="/assets/images/profile_photo.jpg" alt="Manuel Alejandro Matías Astorga" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://alexmatiasas.github.io/" itemprop="url">Manuel Alejandro Matías Astorga</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Data Scientist and Machine Learning Engineer.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Mexico city, Mexico</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto: alejandromatiasastorga@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-globe" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/alexmatiasas" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/alexmatiasas" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/alexmatiasastorga/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://www.kaggle.com/alejandromatias" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i><span class="label">Kaggle</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">Projects</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/projects/"><span class="nav__sub-title">All Projects</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/posts/2016-07-20-text-generation"><i class="fa fa-font" aria-hidden="true"></i> Language Model for Text Generation</a></li>
+            
+              <li><a href="/posts/2016-07-20-sentiment-analysis"><i class="fa fa-heart" aria-hidden="true"></i> Sentiment Analysis</a></li>
+            
+              <li><a href="/posts/2016-07-20-language-model"><i class="fa fa-pencil" aria-hidden="true"></i> Custom Language Model</a></li>
+            
+              <li><a href="/posts/2016-07-20-image-classification"><i class="fa fa-paw" aria-hidden="true"></i> Image Classification</a></li>
+            
+              <li><a href="/posts/2016-07-20-image-recognition"><i class="fa fa-smile-o" aria-hidden="true"></i> Image Recognition</a></li>
+            
+              <li><a href="/posts/2016-07-20-object-detection"><i class="fa fa-check-square-o" aria-hidden="true"></i> Object Detection System</a></li>
+            
+              <li><a href="/posts/2016-07-20-recomendation-system"><i class="fa fa-check" aria-hidden="true"></i> Recommendation System</a></li>
+            
+              <li><a href="/posts/2016-07-20-real-time-data-processing"><i class="fa fa-bar-chart" aria-hidden="true"></i> Real-Time Data Processing</a></li>
+            
+              <li><a href="/posts/2016-07-20-fraud-detection"><i class="fa fa-user-secret" aria-hidden="true"></i> Fraud Detection</a></li>
+            
+              <li><a href="/posts/2016-07-20-use-patterns"><i class="fa fa-user-o" aria-hidden="true"></i> Use Patterns Analysis</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Image recognition">
+    <meta itemprop="description" content="Using machine learning to recognition.">
+    <meta itemprop="datePublished" content="2023-10-27T00:00:00-06:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#image-recognition-project">Image recognition Project</a><ul><li><a href="#project-overview">Project Overview</a></li><li><a href="#dataset-and-preprocessing">Dataset and Preprocessing</a></li><li><a href="#model-and-evaluation">Model and Evaluation</a></li><li><a href="#conclusions">Conclusions</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="image-recognition-project">Image recognition Project</h1>
+
+<h2 id="project-overview">Project Overview</h2>
+<p>This project uses machine learning algorithms to construct a recognizer of images.</p>
+
+<!-- 
+
+- Usa OpenCV para reconocimiento facial o para detección de emociones.
+	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
+	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
+
+ -->
+
+<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
+<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
+
+<h2 id="model-and-evaluation">Model and Evaluation</h2>
+<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
+
+<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
+
+<h2 id="conclusions">Conclusions</h2>
+<p>Summarize the results and future steps.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#deep-learning" class="page__taxonomy-item p-category" rel="tag">Deep Learning</a><span class="sep">, </span>
+    
+      <a href="/tags/#feature-extraction" class="page__taxonomy-item p-category" rel="tag">Feature Extraction</a><span class="sep">, </span>
+    
+      <a href="/tags/#image-recognition" class="page__taxonomy-item p-category" rel="tag">Image Recognition</a><span class="sep">, </span>
+    
+      <a href="/tags/#keras" class="page__taxonomy-item p-category" rel="tag">Keras</a><span class="sep">, </span>
+    
+      <a href="/tags/#opencv" class="page__taxonomy-item p-category" rel="tag">OpenCV</a><span class="sep">, </span>
+    
+      <a href="/tags/#tensorflow" class="page__taxonomy-item p-category" rel="tag">TensorFlow</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#computer-vision" class="page__taxonomy-item p-category" rel="tag">Computer Vision</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-10-27T00:00:00-06:00">October 27, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=Image+recognition%20https%3A%2F%2Falexmatiasas.github.io%2Fposts%2F2016-07-20-image-recognition%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2Fposts%2F2016-07-20-image-recognition%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/2016-07-20-image-classification/" class="pagination--pager" title="Image Classification
+">Previous</a>
+    
+    
+      <a href="/posts/2016-07-20-language-model/" class="pagination--pager" title="Language Model
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/object-detection.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-object-detection/" rel="permalink">Object detection
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to detect objects.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/use-patterns.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-use-patterns/" rel="permalink">Use patterns
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to detect use patterns.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/text-generator.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-text-generation/" rel="permalink">Text Generator
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to construct a text generator.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/sentiments.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-sentiment-analysis/" rel="permalink">Sentiment analysis
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to detect sentiments.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/alexmatiasas" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.com/alexmatiasas" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/alexmatiasastorga/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://www.kaggle.com/alejandromatias" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 <a href="https://alexmatiasas.github.io">Manuel Alejandro Matías Astorga Data Science Portfolio</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

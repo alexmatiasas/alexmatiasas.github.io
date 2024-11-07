@@ -1,0 +1,1306 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Sentiment analysis - Manuel Alejandro Matías Astorga Data Science Portfolio</title>
+<meta name="description" content="Using machine learning to detect sentiments.">
+
+
+  <meta name="author" content="Manuel Alejandro Matías Astorga">
+  
+  <meta property="article:author" content="Manuel Alejandro Matías Astorga">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Manuel Alejandro Matías Astorga Data Science Portfolio">
+<meta property="og:title" content="Sentiment analysis">
+<meta property="og:url" content="https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/">
+
+
+  <meta property="og:description" content="Using machine learning to detect sentiments.">
+
+
+
+  <meta property="og:image" content="https://alexmatiasas.github.io/assets/images/sentiments.jpg">
+
+
+
+  <meta name="twitter:site" content="@alexmatiasas">
+  <meta name="twitter:title" content="Sentiment analysis">
+  <meta name="twitter:description" content="Using machine learning to detect sentiments.">
+  <meta name="twitter:url" content="https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://alexmatiasas.github.io/assets/images/sentiments.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-10-27T00:00:00-06:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="Data Science Portfolio"></a>
+        
+        <a class="site-title" href="/">
+          Data Science Portfolio
+          <span class="site-subtitle">by Manuel Alejandro Matías Astorga</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                 title="Home page"
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about"
+                 title="About page"
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                 title="All projects"
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                 title="All blog posts"
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                 title="All tags"
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                 title="All categories"
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact"
+                 title="Contact page"
+                
+              >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/sentiments.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Sentiment analysis
+
+        
+      </h1>
+      
+        <p class="page__lead">Using machine learning to detect sentiments.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#posts" itemprop="item"><span itemprop="name">Posts</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Sentiment analysis</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://alexmatiasas.github.io/">
+        <img src="/assets/images/profile_photo.jpg" alt="Manuel Alejandro Matías Astorga" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://alexmatiasas.github.io/" itemprop="url">Manuel Alejandro Matías Astorga</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Data Scientist and Machine Learning Engineer.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Mexico city, Mexico</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto: alejandromatiasastorga@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="/" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-globe" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/alexmatiasas" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/alexmatiasas" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/alexmatiasastorga/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://www.kaggle.com/alejandromatias" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i><span class="label">Kaggle</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">Projects</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/projects/"><span class="nav__sub-title">All Projects</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/posts/2016-07-20-text-generation"><i class="fa fa-font" aria-hidden="true"></i> Language Model for Text Generation</a></li>
+            
+              <li><a href="/posts/2016-07-20-sentiment-analysis"><i class="fa fa-heart" aria-hidden="true"></i> Sentiment Analysis</a></li>
+            
+              <li><a href="/posts/2016-07-20-language-model"><i class="fa fa-pencil" aria-hidden="true"></i> Custom Language Model</a></li>
+            
+              <li><a href="/posts/2016-07-20-image-classification"><i class="fa fa-paw" aria-hidden="true"></i> Image Classification</a></li>
+            
+              <li><a href="/posts/2016-07-20-image-recognition"><i class="fa fa-smile-o" aria-hidden="true"></i> Image Recognition</a></li>
+            
+              <li><a href="/posts/2016-07-20-object-detection"><i class="fa fa-check-square-o" aria-hidden="true"></i> Object Detection System</a></li>
+            
+              <li><a href="/posts/2016-07-20-recomendation-system"><i class="fa fa-check" aria-hidden="true"></i> Recommendation System</a></li>
+            
+              <li><a href="/posts/2016-07-20-real-time-data-processing"><i class="fa fa-bar-chart" aria-hidden="true"></i> Real-Time Data Processing</a></li>
+            
+              <li><a href="/posts/2016-07-20-fraud-detection"><i class="fa fa-user-secret" aria-hidden="true"></i> Fraud Detection</a></li>
+            
+              <li><a href="/posts/2016-07-20-use-patterns"><i class="fa fa-user-o" aria-hidden="true"></i> Use Patterns Analysis</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Sentiment analysis">
+    <meta itemprop="description" content="Using machine learning to detect sentiments.">
+    <meta itemprop="datePublished" content="2023-10-27T00:00:00-06:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#sentiment-analysis-project">Sentiment Analysis Project</a><ul><li><a href="#project-overview">Project Overview</a></li><li><a href="#dataset-and-preprocessing">Dataset and Preprocessing</a></li><li><a href="#model-and-evaluation">Model and Evaluation</a></li><li><a href="#conclusions">Conclusions</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="sentiment-analysis-project">Sentiment Analysis Project</h1>
+
+<h2 id="project-overview">Project Overview</h2>
+<p>This project uses machine learning algorithms to detect fraudulent transactions.</p>
+
+<!-- 
+
+-  Construye un modelo que analice el sentimiento de reseñas de productos o tweets.
+	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
+	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
+
+ -->
+
+<!-- 
+
+Puedes encontrar datasets en plataformas como Kaggle, UCI Machine Learning Repository, o los datasets de Google.
+
+b) Estructura tus proyectos profesionalmente
+
+Organiza bien tus proyectos para que otros puedan seguirlos fácilmente. Usa notebooks como Jupyter para exploración, pero también incluye scripts bien organizados cuando sea necesario para demostrar buenas prácticas de ingeniería.
+
+c) Enfócate en la escalabilidad y eficiencia
+
+Google se preocupa mucho por la escalabilidad. Trabaja en proyectos donde puedas manejar grandes volúmenes de datos o resolver problemas de optimización. Por ejemplo:
+
+	•	Procesa datasets grandes con Apache Spark o Dask.
+	•	Implementa modelos eficientes y evalúa su desempeño en entornos de producción simulados.
+
+d) Deploy en la nube
+
+Aprender a desplegar modelos en la nube es un gran plus. Familiarízate con Google Cloud Platform (GCP) o AWS. Puedes desplegar modelos con servicios como TensorFlow Serving, Flask o FastAPI en plataformas como Google Cloud AI o AWS SageMaker.
+
+e) Documentación y GitHub
+
+Publica tus proyectos en GitHub con una buena documentación. Esto mostrará a los reclutadores que sabes cómo trabajar en entornos colaborativos y que eres organizado. 
+ -->
+
+<!-- 
+a) Competencias en algoritmos y estructuras de datos
+
+Google es famoso por hacer preguntas de algoritmos y estructuras de datos en las entrevistas. Dedica tiempo a practicar en plataformas como:
+
+	•	LeetCode
+	•	HackerRank
+	•	Codeforces
+
+Trabaja en problemas de búsqueda binaria, árboles, listas enlazadas, algoritmos de grafos y dinámica de programación.
+
+b) Sistemas distribuidos y arquitectura de software
+
+Para roles en Machine Learning Engineer, es importante comprender cómo escalar y desplegar sistemas de ML. Familiarízate con:
+
+	•	Sistemas distribuidos
+	•	Microservicios
+	•	Gestión de pipelines de datos
+
+Usa frameworks como Airflow o Kubeflow para orquestar pipelines de machine learning.
+
+c) Entrevistas técnicas
+
+Las entrevistas en Google suelen incluir:
+
+	1.	Coding challenges: Preguntas de algoritmos y estructuras de datos.
+	2.	Preguntas de diseño de sistemas: Piensa en cómo diseñarías un sistema distribuido escalable para algún servicio de Google (como Gmail o Google Maps).
+	3.	Entrevistas de machine learning: Prepárate para explicar conceptos teóricos como regularización, overfitting, gradient descent, etc.
+	4.	Behavioral interviews: Prepara respuestas para preguntas sobre cómo manejas problemas complejos, trabajas en equipo o cómo enfrentas situaciones de incertidumbre.
+
+5. Recursos útiles
+
+	•	Coursera: Cursos como el de Deep Learning Specialization de Andrew Ng.
+	•	Fast.ai: Excelente para aprender deep learning.
+	•	Kaggle: Participa en competiciones para aplicar tus habilidades.
+	•	Machine Learning de Google Cloud: Conoce las herramientas que usa Google.
+	•	Libros recomendados: “Deep Learning with Python”, “Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow”.
+ -->
+
+<!-- 
+3. Big Data y Procesamiento Distribuido
+
+	•	Apache Spark: Es una de las herramientas más utilizadas para procesar grandes volúmenes de datos. Spark permite el procesamiento distribuido en clusters, lo cual es fundamental cuando trabajas con datasets que no caben en la memoria de una sola máquina.
+	•	Hadoop: Aunque menos usado en ciencia de datos moderna, sigue siendo relevante para almacenar grandes volúmenes de datos no estructurados.
+ -->
+
+<p>&lt;!–</p>
+<ol>
+  <li>
+    <p>Cloud Computing y Deploy de Modelos</p>
+
+    <p>•	Google Cloud Platform (GCP): Familiarízate con GCP, ya que Google lo usa internamente. Aprende a usar Google AI Platform, BigQuery (para grandes volúmenes de datos) y Cloud Storage.
+•	AWS o Microsoft Azure: Aunque Google Cloud es útil para Google, tener experiencia con AWS o Azure también es valioso.
+•	Docker: Para empaquetar aplicaciones y modelos en contenedores que pueden desplegarse en diferentes entornos sin problemas.
+•	Kubernetes: Para orquestar la implementación de aplicaciones en contenedores a gran escala.</p>
+  </li>
+</ol>
+
+<p>Consejos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Aprende a desplegar modelos de machine learning como microservicios usando frameworks como Flask o FastAPI, y luego despliega esos servicios en la nube usando Google Cloud Run o AWS Lambda.
+•	Usa Docker para empaquetar tu modelo en un contenedor:
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Herramientas de Versionado y Control de Proyectos</p>
+
+    <p>•	Git y GitHub: El control de versiones es esencial en cualquier entorno profesional. Usa Git para gestionar versiones de tus proyectos y GitHub para colaborar y mostrar tus proyectos.
+ •	DVC (Data Version Control): Para versionar datasets y experimentos, lo cual es útil en proyectos de machine learning donde los datos cambian constantemente.</p>
+  </li>
+</ol>
+
+<p>Qué deberías saber:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Python: Comprende conceptos fundamentales como estructuras de datos, funciones, y objetos, además de las bibliotecas clave para ciencia de datos (pandas, numpy).
+•	R: Familiarízate con la sintaxis básica, manipulación de datos (dplyr), y visualización de datos (ggplot2), especialmente si te interesa trabajar en análisis estadístico o académico.
+</code></pre></div></div>
+
+<ol>
+  <li>Big Data y Procesamiento Distribuido: Apache Spark, Hadoop</li>
+</ol>
+
+<p>Para procesar grandes volúmenes de datos, Apache Spark es el estándar.</p>
+
+<p>Dónde aprender:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Big Data Fundamentals (Coursera): Curso de introducción a Big Data y procesamiento distribuido.
+•	Apache Spark:
+•	Databricks Academy: Cursos gratuitos para Spark en Data Science.
+•	Big Data with Spark and Python (Udemy): Curso accesible que cubre Spark desde cero.
+•	Hadoop:
+•	The Ultimate Hands-On Hadoop (Udemy): Curso completo sobre Hadoop y su ecosistema.
+</code></pre></div></div>
+
+<p>Qué deberías saber:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Spark: Conceptos de RDD, DataFrames en Spark, y cómo ejecutar transformaciones y acciones en datos distribuidos.
+•	Hadoop: Estructura del sistema HDFS, MapReduce, y ecosistema Hadoop.
+</code></pre></div></div>
+
+<ol>
+  <li>SQL y Bases de Datos NoSQL: SQL, MongoDB</li>
+</ol>
+
+<p>Es vital tener habilidades sólidas en SQL y comprensión de bases de datos NoSQL para datos no estructurados.</p>
+
+<p>Dónde aprender:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	SQL:
+•	SQL for Data Science (Coursera): Curso enfocado en SQL para ciencia de datos.
+•	SQL Essentials (DataCamp): Curso de introducción con ejercicios interactivos.
+•	MongoDB:
+•	MongoDB University: Cursos gratuitos ofrecidos por MongoDB.
+•	DataCamp: Introduction to MongoDB: Curso introductorio sobre NoSQL.
+</code></pre></div></div>
+
+<p>Qué deberías saber:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	SQL: Conocer SELECT, JOIN, GROUP BY, subqueries y optimización de consultas.
+•	MongoDB: Sintaxis básica de consultas NoSQL y estructuras de documentos JSON.
+</code></pre></div></div>
+
+<ol>
+  <li>Cloud Computing y Deploy de Modelos: GCP, AWS, Docker, Kubernetes</li>
+</ol>
+
+<p>Las empresas de tecnología utilizan ampliamente los servicios en la nube y la contenedorización para desplegar modelos.</p>
+
+<p>Dónde aprender:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Google Cloud Platform (GCP):
+•	Google Cloud Training: Cursos gratuitos de Google, incluyendo introducción a BigQuery y AI Platform.
+•	Coursera: Data Engineering on GCP: Especialización en ingeniería de datos y ML en GCP.
+•	AWS:
+•	AWS Training and Certification: Cursos gratuitos y laboratorios prácticos.
+•	Docker y Kubernetes:
+•	Docker for Beginners (Udemy): Curso básico de Docker.
+•	Kubernetes for Data Scientists (Coursera): Curso sobre Kubernetes orientado a data science.
+</code></pre></div></div>
+
+<p>Qué deberías saber:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	GCP y AWS: Comprender los servicios de almacenamiento (BigQuery, S3), y AI Platform o SageMaker para modelado.
+•	Docker: Creación de contenedores, imágenes, y redes en Docker.
+•	Kubernetes: Conceptos básicos de orquestación de contenedores y creación de clusters.
+</code></pre></div></div>
+
+<ol>
+  <li>Versionado y Control de Proyectos: Git, GitHub, DVC</li>
+</ol>
+
+<p>Para trabajo colaborativo, Git es esencial, y DVC es útil para versionar datos y modelos.</p>
+
+<p>Dónde aprender:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Git y GitHub:
+•	Udacity: Version Control with Git: Curso gratuito de Git.
+•	Data Version Control (DVC):
+•	DVC Documentation: Documentación oficial de DVC, con ejemplos y tutoriales.
+</code></pre></div></div>
+
+<p>Qué deberías saber:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>•	Git: Flujo de trabajo con commits, ramas, merges, y resolución de conflictos.
+•	GitHub: Publicación de proyectos y colaboración.
+•	DVC: Versionado de datasets y pipelines en ML.   --&gt;
+</code></pre></div></div>
+
+<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
+<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
+
+<!-- 
+Proyecto 1: Análisis de Sentimiento en Texto (NLP)
+
+Objetivo: Crear un modelo que pueda clasificar reseñas de productos en positivo, negativo o neutral, usando análisis de sentimiento.
+
+Paso a Paso
+
+	1.	Definición del Problema y Recolección de Datos
+	•	Objetivo: Crear un clasificador de sentimiento basado en reseñas de productos.
+	•	Datos: Puedes usar datasets de reseñas, como el de Amazon o Yelp, disponibles en Kaggle, UCI Machine Learning Repository, o datasets de Hugging Face.
+	2.	Exploración de Datos y Limpieza
+	•	Realiza un análisis exploratorio inicial para entender la distribución de las clases (positivo, negativo, neutral).
+	•	Limpieza de Texto:
+	•	Convierte el texto a minúsculas, elimina signos de puntuación, URLs y caracteres especiales.
+	•	Tokenización: Divide el texto en palabras individuales.
+	•	Stop Words: Elimina palabras irrelevantes (como “el”, “de”, “un”).
+	3.	Preprocesamiento Avanzado
+	•	Vectorización: Usa CountVectorizer o TF-IDF para convertir texto a valores numéricos.
+	•	Embeddings: Para mejorar el desempeño, usa embeddings preentrenados como Word2Vec o GloVe.
+	•	Modelo Transformer (opcional): Si deseas un enfoque más avanzado, utiliza modelos preentrenados como BERT de Hugging Face.
+	4.	Entrenamiento del Modelo
+	•	Prueba varios modelos, como Naive Bayes, Support Vector Machines (SVM) y Redes Neuronales.
+	•	Compara el desempeño de los modelos usando métricas como accuracy, precision, recall y f1-score.
+	5.	Evaluación y Mejora
+	•	Evalúa el modelo usando una matriz de confusión y métricas de clasificación.
+	•	Optimización de hiperparámetros: Usa técnicas como Grid Search o Random Search para mejorar el rendimiento.
+	6.	Despliegue y Visualización
+	•	Crea un API con Flask o FastAPI para recibir texto como entrada y devolver el sentimiento.
+	•	Crea un dashboard interactivo (usando Plotly Dash o Streamlit) para mostrar visualmente las predicciones y métricas.
+ -->
+
+<h2 id="model-and-evaluation">Model and Evaluation</h2>
+<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
+
+<!-- 
+Consejos Generales para el Desarrollo de Proyectos de Ciencia de Datos
+
+	1.	Documenta Todo el Proceso: Desde la recolección de datos hasta el despliegue, anota decisiones y explica el porqué de cada elección (puedes usar Markdown en Jupyter Notebooks).
+	2.	Itera en el Desarrollo del Modelo: Enfócate primero en construir un modelo base y luego optimízalo. Asegúrate de evaluar cada cambio.
+	3.	Visualización y Comunicación de Resultados: La visualización es clave en ciencia de datos. Para los tres proyectos, usa gráficos para mostrar el rendimiento del modelo, ejemplos de predicciones y métricas.
+	4.	Manejo de Datos: Almacena los datos de entrenamiento y prueba de manera organizada para poder acceder y reutilizar los mismos conjuntos en experimentos futuros.
+	5.	Versión de Datos y Modelos: Utiliza DVC o Git-LFS si trabajas con grandes volúmenes de datos. Esto te ayudará a rastrear cambios y replicar experimentos.
+	6.	Prepara tu Portafolio: Publica el código en GitHub con una explicación detallada de cada proyecto, incluyendo README y guías de instalación y uso. Esto demuestra tus habilidades técnicas y tu capacidad para documentar y comunicar.
+	7.	Despliegue y Mantenimiento: Experimenta desplegando tus modelos en la nube (usando servicios gratuitos de GCP o AWS) y mantén tu API activa y actualizada para mostrarla en entrevistas o a reclutadores.
+ -->
+
+<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
+
+<h2 id="conclusions">Conclusions</h2>
+<p>Summarize the results and future steps.</p>
+
+<!-- 
+Proyecto: Clasificación de Sentimiento en Reseñas de Productos (NLP)
+
+Objetivo: Construir un modelo de machine learning para clasificar reseñas de productos en positivo, neutral o negativo, utilizando un enfoque de Procesamiento de Lenguaje Natural (NLP).
+
+Paso 1: Definición del Problema y Recopilación de Datos
+
+	1.	Definir el objetivo:
+	•	Queremos que el modelo clasifique una reseña en tres categorías: positivo, negativo o neutral.
+	•	Ejemplo de uso: una empresa podría usar este modelo para monitorear la satisfacción del cliente en tiempo real.
+	2.	Obtén los datos:
+	•	Usaremos datasets que contengan reseñas etiquetadas. Ejemplos incluyen:
+	•	Amazon Customer Reviews en Kaggle.
+	•	Yelp Review Dataset.
+	•	IMDb Movie Reviews.
+	3.	Explora el dataset y define el flujo de procesamiento de datos:
+	•	Carga el dataset y visualiza las primeras filas.
+	•	Identifica las columnas importantes: texto de la reseña y etiqueta (positiva, negativa, neutral).
+
+Código para explorar el dataset:
+import pandas as pd
+
+# Cargar el dataset
+df = pd.read_csv("reviews.csv")  # Cambia esto a tu dataset
+
+# Ver las primeras filas
+print(df.head())
+
+# Información general sobre el dataset
+print(df.info())
+
+Paso 2: Exploración y Limpieza de Datos
+
+	1.	Exploración de datos:
+	•	Analiza la distribución de clases (positivo, negativo, neutral). Esto te ayudará a identificar si el dataset está balanceado o si será necesario algún ajuste.
+
+print(df['sentiment'].value_counts())  # Ver distribución de clases
+
+	2.	Limpieza del texto:
+	•	Convertir el texto a minúsculas para normalizar.
+	•	Eliminar signos de puntuación, caracteres especiales, URLs, y emojis si es necesario.
+	•	Tokenizar el texto (dividirlo en palabras).
+
+import re
+import nltk
+from nltk.corpus import stopwords
+
+# Descargar stop words
+nltk.download('stopwords')
+stop_words = set(stopwords.words('english'))
+
+def limpiar_texto(texto):
+    # Convertir a minúsculas
+    texto = texto.lower()
+    # Eliminar URLs y caracteres especiales
+    texto = re.sub(r"http\S+|www\S+|https\S+", '', texto, flags=re.MULTILINE)
+    texto = re.sub(r'\@w+|\#','', texto)
+    # Eliminar signos de puntuación
+    texto = re.sub(r'[^\w\s]', '', texto)
+    # Eliminar stop words
+    texto = ' '.join([palabra for palabra in texto.split() if palabra not in stop_words])
+    return texto
+
+# Aplicar limpieza al dataset
+df['cleaned_text'] = df['review_text'].apply(limpiar_texto)
+
+Paso 3: Preprocesamiento de Datos
+
+	1.	Vectorización del texto:
+	•	Convierte el texto en una representación numérica. Para un proyecto robusto, es ideal comenzar con TF-IDF o probar embeddings preentrenados como Word2Vec o GloVe.
+	•	TF-IDF transforma cada documento en un vector de palabras donde cada palabra está ponderada por su frecuencia inversa en el corpus.
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# Vectorización TF-IDF
+vectorizer = TfidfVectorizer(max_features=5000)
+X = vectorizer.fit_transform(df['cleaned_text']).toarray()
+y = df['sentiment']  # La columna de etiquetas (positivo, negativo, neutral)
+
+	2.	División de los datos:
+	•	Divide los datos en conjuntos de entrenamiento y prueba.
+
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+Paso 4: Selección y Entrenamiento del Modelo
+
+	1.	Modelos Base:
+	•	Comienza con modelos como Naive Bayes, Support Vector Machines (SVM) y Random Forest para evaluar el desempeño inicial.
+
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score, classification_report
+
+# Entrenar modelo de Naive Bayes
+modelo_nb = MultinomialNB()
+modelo_nb.fit(X_train, y_train)
+
+# Predicción y evaluación
+y_pred = modelo_nb.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+
+	2.	Optimización de Hiperparámetros:
+	•	Usa GridSearchCV o RandomizedSearchCV para mejorar el rendimiento del modelo con los parámetros óptimos.
+
+from sklearn.model_selection import GridSearchCV
+
+parametros = {'alpha': [0.1, 0.5, 1.0]}  # Ejemplo de parámetros para Naive Bayes
+grid_search = GridSearchCV(estimator=modelo_nb, param_grid=parametros, cv=5, scoring='accuracy')
+grid_search.fit(X_train, y_train)
+
+print("Mejor hiperparámetro:", grid_search.best_params_)
+
+
+3.	Modelo Avanzado: Embeddings y Redes Neuronales (opcional)
+	•	Para mejorar el rendimiento, usa embeddings preentrenados y una red neuronal simple.
+	•	También puedes probar transformers (como BERT) para una mayor precisión.
+
+Paso 5: Evaluación y Optimización Final
+
+	1.	Evaluación detallada:
+	•	Usa una matriz de confusión para visualizar errores comunes y ajustar el modelo si es necesario.
+
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Crear matriz de confusión
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.show()
+
+	2.	Ajustes finales:
+	•	Basado en la matriz de confusión, ajusta el preprocesamiento o prueba otros algoritmos si ciertos errores son recurrentes.
+
+Paso 6: Despliegue del Modelo
+
+	1.	Crear una API de Inferencia:
+	•	Usa Flask o FastAPI para crear una API que reciba texto y devuelva la predicción del sentimiento.
+
+from flask import Flask, request, jsonify
+import joblib
+
+# Guardar modelo entrenado
+joblib.dump(modelo_nb, 'sentiment_model.pkl')
+
+# Crear la API con Flask
+app = Flask(__name__)
+
+# Cargar modelo
+model = joblib.load('sentiment_model.pkl')
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json(force=True)
+    review_text = data['text']
+    cleaned_text = limpiar_texto(review_text)  # Usa la función de limpieza que creamos
+    vectorized_text = vectorizer.transform([cleaned_text]).toarray()
+    prediction = model.predict(vectorized_text)
+    return jsonify({'sentiment': prediction[0]})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+	2.	Despliega en la nube:
+	•	Puedes usar Google Cloud Run, AWS Lambda o Heroku para alojar tu API y hacerla accesible de manera pública.
+
+Paso 7: Creación de Dashboard Interactivo
+
+	1.	Dashboard para Visualización de Resultados:
+	•	Usa Streamlit o Plotly Dash para crear una interfaz de usuario donde los usuarios puedan escribir una reseña y ver la predicción.
+
+import streamlit as st
+import joblib
+
+# Cargar el modelo
+model = joblib.load('sentiment_model.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')  # Cargar vectorizador si se guardó
+
+# Crear la interfaz en Streamlit
+st.title("Clasificación de Sentimiento en Reseñas")
+review_text = st.text_area("Ingrese su reseña aquí:")
+
+if st.button("Clasificar"):
+    cleaned_text = limpiar_texto(review_text)
+    vectorized_text = vectorizer.transform([cleaned_text]).toarray()
+    prediction = model.predict(vectorized_text)
+    st.write(f"Sentimiento Predicho: {prediction[0]}")
+ -->
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#classification" class="page__taxonomy-item p-category" rel="tag">Classification</a><span class="sep">, </span>
+    
+      <a href="/tags/#natural-language-processing-nlp" class="page__taxonomy-item p-category" rel="tag">Natural Language Processing (NLP)</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#scikit-learn" class="page__taxonomy-item p-category" rel="tag">Scikit-Learn</a><span class="sep">, </span>
+    
+      <a href="/tags/#sentiment-analysis" class="page__taxonomy-item p-category" rel="tag">Sentiment Analysis</a><span class="sep">, </span>
+    
+      <a href="/tags/#text-processing" class="page__taxonomy-item p-category" rel="tag">Text Processing</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#natural-language-processing-nlp" class="page__taxonomy-item p-category" rel="tag">Natural Language Processing (NLP)</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-10-27T00:00:00-06:00">October 27, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=Sentiment+analysis%20https%3A%2F%2Falexmatiasas.github.io%2Fposts%2F2016-07-20-sentiment-analysis%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2Fposts%2F2016-07-20-sentiment-analysis%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/2016-07-20-recomendation-system/" class="pagination--pager" title="Recommendation system
+">Previous</a>
+    
+    
+      <a href="/posts/2016-07-20-text-generation/" class="pagination--pager" title="Text Generator
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/object-detection.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-object-detection/" rel="permalink">Object detection
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to detect objects.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/use-patterns.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-use-patterns/" rel="permalink">Use patterns
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to detect use patterns.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/text-generator.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-text-generation/" rel="permalink">Text Generator
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to construct a text generator.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/recomendation-system.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2016-07-20-recomendation-system/" rel="permalink">Recommendation system
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Using machine learning to recommend things
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/alexmatiasas" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.com/alexmatiasas" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/alexmatiasastorga/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://www.kaggle.com/alejandromatias" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 <a href="https://alexmatiasas.github.io">Manuel Alejandro Matías Astorga Data Science Portfolio</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
