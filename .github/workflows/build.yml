@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch: {}
   repository_dispatch: {}
 
@@ -45,6 +45,9 @@ jobs:
       run: |
         echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
         bundle install
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
 
     - name: Update Algolia index
       working-directory: docs/
