@@ -39,21 +39,15 @@ jobs:
         bundle install --jobs=4 --retry=3
         bundle clean
 
-    - name: Install dependencies
-      env:
-        FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }} 
-      run: |
-        echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
-        bundle install
+    # - name: Install dependencies
+    #   env:
+    #     FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }} 
+    #   run: |
+    #     echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
+    #     bundle install
 
-    - name: Build Jekyll site
-      run: bundle exec jekyll build
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+    # - name: Build Jekyll site
+    #   run: bundle exec jekyll build
 
     - name: Update Algolia index
       working-directory: docs/
