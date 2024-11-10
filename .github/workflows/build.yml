@@ -67,7 +67,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Asegúrate de que sea la rama correcta donde deseas desplegar
+      - main 
   workflow_dispatch: {}
 
 jobs:
@@ -81,7 +81,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0'  # Usa la versión compatible que prefieras
+        ruby-version: '3.0'  
         bundler-cache: true
 
     - name: Set up FORMSPREE ID Secret
@@ -93,7 +93,7 @@ jobs:
         bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4  # Usa la versión más reciente de la acción
+      uses: peaceiris/actions-gh-pages@v4 
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  # Carpeta de salida de Jekyll
+        publish_dir: ./_site  

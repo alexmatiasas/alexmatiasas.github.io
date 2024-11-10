@@ -50,7 +50,7 @@ I am a **Data Scientist** and **Machine Learning Engineer** (ML Engineer) with a
 
 ### Programming Languages
 
-**[<img src="/assets/images/Python.svg" alt="Python" width=20 height=20> Python](https://www.python.org)** | **[<img src="/assets/images/R.svg" alt="R" width=20 height=2> R](https://www.r-project.org)** | **[<img src="/assets/images/cpp_logo.svg" alt="c_pp" width=20 height=20> C++](https://learn.microsoft.com/en-us/cpp/)** | **[<img src="/assets/images/jAVA.svg" alt="Java" width=20 height=20> Java](https://www.java.com/)** 
+**[<img src="/assets/images/Python.svg" alt="Python" width=20 height=20> Python](https://www.python.org)** | **[<img src="/assets/images/R.svg" alt="R" width=20 height=2> R](https://www.r-project.org)** | **[<img src="/assets/images/cpp_logo.svg" alt="c_pp" width=20 height=20> C++](https://learn.microsoft.com/en-us/cpp/)** | **[<img src="/assets/images/Java.svg" alt="Java" width=20 height=20> Java](https://www.java.com/)** 
 **<i class="fa-solid fa-database"></i> SQL**: | [<img src="/assets/images/PostgresSQL.svg" alt="PostgresSQL" width=25 height=25> PostgresSQL](https://www.postgresql.org) | [<img src="/assets/images/MySQL.svg" alt="MySQL" width=25 height=25> MySQL](https://www.mysql.com) | [<img src="/assets/images/SQLite.svg" alt="SQLite" width=25 height=25> SQLite](https://www.sqlite.org) 
 **<i class="fa fa-table" aria-hidden="true"></i> NoSQL**: | [<img src="/assets/images/MongoDB.svg" alt="MongoDB" width=25 height=25> MongoDB](http://www.mongodb.org) 
 
