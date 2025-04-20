@@ -1,99 +1,116 @@
-# name: build
-
-# on:
-#   push:
-#     branches:
-#       - main
-#   workflow_dispatch: {}
-#   repository_dispatch: {}
-
-# jobs:
-#   build:
-#     # if: github.repository == 'mmistakes/minimal-mistakes'
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v4
-#       with:
-#         fetch-depth: 0
-
-#     - uses: ruby/setup-ruby@v1
-#       with:
-#         ruby-version: '3.2'
-#     - name: Setup cache for Bundler
-#       id: cache
-#       uses: actions/cache@v4
-#       with:
-#         path: |
-#           Gemfile.lock
-#           vendor/bundle
-#         key: ${{ runner.os }}-bundler-${{ hashFiles('docs/Gemfile') }}
-#         restore-keys: |
-#           ${{ runner.os }}-bundler-
-
-#     - name: Install - Bundler
-#       env:
-#         MAKE: make -j2
-#       working-directory: docs/
-#       run: |
-#         bundle config set path vendor/bundle
-#         bundle install --jobs=4 --retry=3
-#         bundle clean
-
-#     - name: Install dependencies
-#       env:
-#         FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }} 
-#       run: |
-#         echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
-#         bundle install
-
-#     - name: Build Jekyll site
-#       run: bundle exec jekyll build
-
-#     - name: Deploy to GitHub Pages
-#       uses: peaceiris/actions-gh-pages@v4  # Actualizar a v4 para Node 16 o superior
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
-#         publish_dir: ./_site
-
-#     - name: Update Algolia index
-#       working-directory: docs/
-#       run: bundle exec jekyll algolia push
-#       env:
-#         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-#       continue-on-error: true
-
-name: Build and Deploy
+name: build
 
 on:
   push:
     branches:
+<<<<<<< HEAD
       - main 
+=======
+      - main
+>>>>>>> 2995b93f (fixed _config.yml)
   workflow_dispatch: {}
+  repository_dispatch: {}
 
 jobs:
   build:
+    # if: github.repository == 'mmistakes/minimal-mistakes'
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
+    - uses: actions/checkout@v4
       with:
+<<<<<<< HEAD
         ruby-version: '3.0'  
         bundler-cache: true
+=======
+        fetch-depth: 0
+>>>>>>> 2995b93f (fixed _config.yml)
 
-    - name: Set up FORMSPREE ID Secret
-      run: echo "FORMSPREE_FORM_ID=${{ secrets.FORMSPREE_FORM_ID }}" >> .env
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+    - name: Setup cache for Bundler
+      id: cache
+      uses: actions/cache@v4
+      with:
+        path: |
+          docs/Gemfile.lock
+          docs/vendor/bundle
+        key: ${{ runner.os }}-bundler-${{ hashFiles('docs/Gemfile') }}
+        restore-keys: |
+          ${{ runner.os }}-bundler-
+
+    - name: Install - Bundler
+      env:
+        MAKE: make -j2
+      working-directory: docs/
+      run: |
+        bundle config set path vendor/bundle
+        bundle install --jobs=4 --retry=3
+        bundle clean
 
     - name: Install dependencies
+      env:
+        FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }} 
       run: |
+        echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
         bundle install
-        bundle exec jekyll build
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
+<<<<<<< HEAD
       uses: peaceiris/actions-gh-pages@v4 
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site  
+=======
+      uses: peaceiris/actions-gh-pages@v4  # Actualizar a v4 para Node 16 o superior
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+
+    - name: Update Algolia index
+      working-directory: docs/
+      run: bundle exec jekyll algolia push
+      env:
+        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+      continue-on-error: true
+
+# name: Build and Deploy
+
+# on:
+#   push:
+#     branches:
+#       - main  # Cambia "main" si tu rama principal tiene otro nombre
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3  # Actualizar a v3 para Node 16 o superior
+
+#       - name: Setup Ruby
+#         uses: ruby/setup-ruby@v1
+#         with:
+#           ruby-version: '2.7'
+#           bundler-cache: true
+
+#       - name: Install dependencies
+#         env:
+#           FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }}  # Usar el nombre exacto del secreto
+#         run: |
+#           echo "FORMSPREE_FORM_ID=$FORMSPREE_FORM_ID" >> .env
+#           bundle install
+
+#       - name: Build Jekyll site
+#         run: bundle exec jekyll build
+
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v4  # Actualizar a v4 para Node 16 o superior
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./_site
+>>>>>>> 2995b93f (fixed _config.yml)
