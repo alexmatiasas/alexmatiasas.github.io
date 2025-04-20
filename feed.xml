@@ -1,26 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://alexmatiasas.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alexmatiasas.github.io/" rel="alternate" type="text/html" /><updated>2025-04-20T07:03:12-06:00</updated><id>https://alexmatiasas.github.io/feed.xml</id><title type="html">Manuel Alejandro Matías Astorga Data Science Portfolio</title><subtitle>A showcase of my Data Science and Machine Learning projects.</subtitle><author><name>Manuel Alejandro Matías Astorga</name><email></email></author><entry><title type="html">Object detection</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-object-detection/" rel="alternate" type="text/html" title="Object detection" /><published>2024-10-27T00:00:00-06:00</published><updated>2024-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/object-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-object-detection/"><![CDATA[<h1 id="object-detection-project">Object detection Project</h1>
-
-<h2 id="project-overview">Project Overview</h2>
-<p>This project uses machine learning algorithms to construct a text generator.</p>
-
-<!-- 
-
-- Implementa un modelo como YOLO o Faster R-CNN para detectar objetos en imágenes o videos.
-	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
-	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
-
- -->
-
-<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
-<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
-
-<h2 id="model-and-evaluation">Model and Evaluation</h2>
-<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
-
-<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
-
-<h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Computer Vision" /><category term="Object Detection" /><category term="YOLO" /><category term="Real-Time" /><category term="OpenCV" /><category term="Python" /><category term="Deep Learning" /><summary type="html"><![CDATA[Using machine learning to detect objects.]]></summary></entry><entry><title type="html">Fraud Detection with ML</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-fraud-detection/" rel="alternate" type="text/html" title="Fraud Detection with ML" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/fraud-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-fraud-detection/"><![CDATA[<h2 id="project-overview">Project Overview</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://alexmatiasas.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alexmatiasas.github.io/" rel="alternate" type="text/html" /><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/feed.xml</id><title type="html">Manuel Alejandro Matías Astorga Data Science Portfolio</title><subtitle>A showcase of my Data Science and Machine Learning projects.</subtitle><author><name>Manuel Alejandro Matías Astorga</name></author><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-fraud-detection/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-fraud-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-fraud-detection/"><![CDATA[<h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to detect fraudulent transactions.</p>
 
 <!-- 
@@ -38,7 +16,7 @@
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Anomaly Detection" /><category term="Classification" /><category term="Finance" /><category term="Machine Learning" /><category term="Scikit-learn" /><category term="Random Forest" /><summary type="html"><![CDATA[Using machine learning to detect fraudulent transactions.]]></summary></entry><entry><title type="html">Image Classification</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-image-classification/" rel="alternate" type="text/html" title="Image Classification" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/image-classification</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-image-classification/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-classification/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-classification</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-classification/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct an image classificator.</p>
@@ -91,7 +69,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Computer Vision" /><category term="Convolutional neural network (CNN)" /><category term="Image Processing, TensorFlow" /><category term="Keras" /><category term="Deep Learning" /><category term="Classification" /><summary type="html"><![CDATA[Using machine learning to construct an image classificator.]]></summary></entry><entry><title type="html">Image recognition</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/" rel="alternate" type="text/html" title="Image recognition" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/image-recognition</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-image-recognition/"><![CDATA[<h1 id="image-recognition-project">Image recognition Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-recognition/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-recognition</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-recognition/"><![CDATA[<h1 id="image-recognition-project">Image recognition Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a recognizer of images.</p>
@@ -113,7 +91,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Computer Vision" /><category term="Image Recognition" /><category term="Feature Extraction" /><category term="TensorFlow" /><category term="Keras" /><category term="OpenCV" /><category term="Deep Learning" /><summary type="html"><![CDATA[Using machine learning to recognition.]]></summary></entry><entry><title type="html">Language Model</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-language-model/" rel="alternate" type="text/html" title="Language Model" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/language-model</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-language-model/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-language-model/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-language-model</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-language-model/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a language model.</p>
@@ -135,7 +113,29 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Natural Language Processing (NLP)" /><category term="Language Model" /><category term="Natural Language Processing (NLP)" /><category term="Transformers" /><category term="GPT" /><category term="Text Generation" /><category term="PyTorch" /><summary type="html"><![CDATA[Using machine learning to construct a language model.]]></summary></entry><entry><title type="html">Real Time data processing</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-real-time-data-processing/" rel="alternate" type="text/html" title="Real Time data processing" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/real-time-data-processing</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-real-time-data-processing/"><![CDATA[<h1 id="real-time-data-processing-project">Real time data processing Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-object-detection/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-object-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-object-detection/"><![CDATA[<h1 id="object-detection-project">Object detection Project</h1>
+
+<h2 id="project-overview">Project Overview</h2>
+<p>This project uses machine learning algorithms to construct a text generator.</p>
+
+<!-- 
+
+- Implementa un modelo como YOLO o Faster R-CNN para detectar objetos en imágenes o videos.
+	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
+	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
+
+ -->
+
+<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
+<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
+
+<h2 id="model-and-evaluation">Model and Evaluation</h2>
+<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
+
+<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
+
+<h2 id="conclusions">Conclusions</h2>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-real-time-data-processing</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/"><![CDATA[<h1 id="real-time-data-processing-project">Real time data processing Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to analize real time data.</p>
@@ -157,7 +157,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Data Engineering" /><category term="Real-Time" /><category term="Streaming" /><category term="Apache Kafka" /><category term="Apache Spark" /><category term="Big Data" /><category term="Data Pipelines" /><summary type="html"><![CDATA[Using machine learning to analize real time data.]]></summary></entry><entry><title type="html">Recommendation system</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-recomendation-system/" rel="alternate" type="text/html" title="Recommendation system" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/recomendation-system</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-recomendation-system/"><![CDATA[<h1 id="recommendation-system-project">Recommendation system Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-recomendation-system/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-recomendation-system</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-recomendation-system/"><![CDATA[<h1 id="recommendation-system-project">Recommendation system Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to recommend things.</p>
@@ -214,7 +214,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Recommendation Systems" /><category term="Collaborative Filtering" /><category term="Personalization" /><category term="Scikit-Learn" /><category term="Data Analysis" /><category term="Python" /><summary type="html"><![CDATA[Using machine learning to recommend things]]></summary></entry><entry><title type="html">Sentiment analysis</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/" rel="alternate" type="text/html" title="Sentiment analysis" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/sentiment-analysis</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-sentiment-analysis/"><![CDATA[<h1 id="sentiment-analysis-project">Sentiment Analysis Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-sentiment-analysis</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/"><![CDATA[<h1 id="sentiment-analysis-project">Sentiment Analysis Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to detect fraudulent transactions.</p>
@@ -665,7 +665,7 @@ if st.button("Clasificar"):
     vectorized_text = vectorizer.transform([cleaned_text]).toarray()
     prediction = model.predict(vectorized_text)
     st.write(f"Sentimiento Predicho: {prediction[0]}")
- -->]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Natural Language Processing (NLP)" /><category term="Sentiment Analysis" /><category term="Natural Language Processing (NLP)" /><category term="Text Processing" /><category term="Classification" /><category term="Scikit-Learn" /><category term="Python" /><summary type="html"><![CDATA[Using machine learning to detect sentiments.]]></summary></entry><entry><title type="html">Text Generator</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-text-generation/" rel="alternate" type="text/html" title="Text Generator" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/text-generation</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-text-generation/"><![CDATA[<h1 id="text-generator-project">Text generator Project</h1>
+ -->]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-text-generation/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-text-generation</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-text-generation/"><![CDATA[<h1 id="text-generator-project">Text generator Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a text generator.</p>
@@ -687,7 +687,7 @@ if st.button("Clasificar"):
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Natural Language Processing (NLP)" /><category term="Text Generation" /><category term="Natural Language Processing (NLP)" /><category term="Transformers" /><category term="GPT" /><category term="Language Modeling" /><category term="PyTorch" /><summary type="html"><![CDATA[Using machine learning to construct a text generator.]]></summary></entry><entry><title type="html">Use patterns</title><link href="https://alexmatiasas.github.io/posts/2016-07-20-use-patterns/" rel="alternate" type="text/html" title="Use patterns" /><published>2023-10-27T00:00:00-06:00</published><updated>2023-10-27T00:00:00-06:00</updated><id>https://alexmatiasas.github.io/posts/use-patterns</id><content type="html" xml:base="https://alexmatiasas.github.io/posts/2016-07-20-use-patterns/"><![CDATA[<h1 id="use-patterns-project">Use patterns Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-use-patterns/" rel="alternate" type="text/html" title="" /><published>2025-04-20T09:29:42-06:00</published><updated>2025-04-20T09:29:42-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-use-patterns</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-use-patterns/"><![CDATA[<h1 id="use-patterns-project">Use patterns Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to detect use patterns.</p>
@@ -709,4 +709,4 @@ if st.button("Clasificar"):
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author><category term="Data Analysis" /><category term="User Behavior" /><category term="Patter Recognition" /><category term="Clustering" /><category term="Pandas" /><category term="Python" /><category term="Data Analysis" /><summary type="html"><![CDATA[Using machine learning to detect use patterns.]]></summary></entry></feed>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry></feed>
