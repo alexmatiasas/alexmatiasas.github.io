@@ -71,6 +71,7 @@ atom_feed:
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : "lunr" # lunr (default), algolia, google
+formspree_form_id        : xkgnrbva
 lunr:
   search_within_pages    : true # true, false (default)
 algolia:

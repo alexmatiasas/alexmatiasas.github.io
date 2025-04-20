@@ -138,7 +138,9 @@ Problem-solving | Scientific communication | Research mindset | Self-taught lear
 
 ## <i class="fas fa-project-diagram"></i> Featured Projects
 
-Here are some of the projects I plan to build and showcase soon. Stay tuned!
+Here are some of the projects I plan to build and showcase soon. 🚧 Work In Progress
+
+Stay tuned!
 
 {% include feature_row id="fraud-detection" type="left" %}
 {% include feature_row id="real-time-object-detection" type="left" %}
