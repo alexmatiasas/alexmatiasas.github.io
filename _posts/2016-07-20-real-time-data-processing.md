@@ -17,7 +17,7 @@ toc_sticky: true
 toc_label: "Contents"
 author_profile: true
 related: true
-categories:
+categories: [project]
   - Data Engineering
 tags:
   - Real-Time

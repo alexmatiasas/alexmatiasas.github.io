@@ -17,7 +17,7 @@ toc_sticky: true
 toc_label: "Contents"
 author_profile: true
 related: true
-categories:
+categories: [project]
   - Data Analysis
 tags:
   - User Behavior

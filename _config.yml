@@ -31,10 +31,10 @@ masthead_title           : "Data Science Portfolio"
 breadcrumbs              : true
 words_per_minute         : 250
 enable_copy_code_button  : true
-copyright                : " " # "copyright" name, defaults to site.title
+copyright                : "© 2025 Manuel Alejandro Matías Astorga" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : false # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -111,7 +111,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -123,7 +123,7 @@ author:
   avatar           : "/assets/images/profile_photo.jpg"
   bio              : "Data Scientist and Machine Learning Engineer."
   location         : "Mexico City, Mexico"
-  email            : ""
+  # email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
@@ -143,8 +143,8 @@ author:
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
       # url: https://gitlab.com/alexmatiasas
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
@@ -392,9 +392,9 @@ defaults:
 
 collections:
   posts:
-    type: posts
     output: true
-    permalink: /:collection/:name/
+  projects:
+    output: true
     
   # posts:
   #   output: true

@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Welcome to My Data Science Portfolio!"
-excerpt: "Explore my projects, blog posts, and case studies."
+excerpt: "Explore real-world projects and insights in Data Science, Machine Learning, and AI."
 permalink: /
 author_profile: true
 # sidebar:
@@ -36,56 +36,56 @@ home_feature_row:
     image_path:  assets/images/projects.jpg
     alt: "Projects"
     title: "Projects"
-    excerpt: "Explore a collection of my work across various domains in Data Science and Machine Learning, from Natural Language Processing to Real-Time Data Processing."
-    btn_label: "Go to Project Section"
+    excerpt: "Explore a growing collection of real-world applications in Data Science, from Sentiment Analysis to Fraud Detection."
+    btn_label: "View Projects"
     btn_class: "btn--primary"
-  - url: /Blog
+  - url: /blog
     image_path:  assets/images/blog.jpg
     alt: "Blog"
     title: "Blog"
-    excerpt: "Insights and tutorials on Data Science, Machine Learning, and more."
-    btn_label: "Go to my Blog "
+    excerpt: "Technical breakdowns, insights, and tutorials from my journey in ML and Data Science."
+    btn_label: "Read Blog "
     btn_class: "btn--primary"
   - url: /about
     image_path:  assets/images/About me.jpg
     alt: "About Me"
     title: "About Me"
-    excerpt: "Learn more about my background in Data Science and Physics."
+    excerpt: "Get to know more about my academic background and transition into Data Science."
     btn_label: "About Me"
     btn_class: "btn--primary"
 
 fraud-detection:
   - url: /posts/2016-07-20-fraud-detection
-    image_path:  /assets/images/fraud-detection.jpg
+    image_path: /assets/images/fraud-detection.jpg
     alt: "Fraud Detection"
     title: "Fraud Detection"
-    excerpt: "Built a machine learning model to detect fraudulent transactions with high accuracy, leveraging ensemble methods like Random Forest and Gradient Boosting."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    excerpt: "Placeholder for upcoming project: ML model to detect fraudulent transactions using ensemble methods."
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 real-time-object-detection:
   - url: /posts/2016-07-20-object-detection
-    image_path:  /assets/images/object-detection.jpg
+    image_path: /assets/images/object-detection.jpg
     alt: "Real Time Object Detection"
-    title: "Real Time Object Detection"
-    excerpt: "Developed a real-time object detection model using YOLO to identify and classify objects in video streams, optimized for high-speed processing."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    title: "Real-Time Object Detection"
+    excerpt: "Placeholder for YOLO-based real-time object detection pipeline on video streams."
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 customer-recommendation-system:
   - url: /posts/2016-07-20-recomendation-system
-    image_path:  /assets/images/recomendation-system.jpg
-    alt: "Customer Recommendation System"
-    title: "Customer Recommendation System"
-    excerpt: "Created a personalized recommendation system using collaborative filtering to enhance customer engagement for e-commerce."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    image_path: /assets/images/recomendation-system.jpg
+    alt: "Recommendation System"
+    title: "Recommendation System"
+    excerpt: "Placeholder for collaborative filtering recommendation engine."
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 language-model-for-text-generation:
   - url: /posts/2016-07-20-text-generation
     image_path: assets/images/text-generator.jpg
     alt: "Text Generation"
     title: "Text Generation"
-    excerpt: "Trained a language model to generate human-like text based on input prompts, showcasing advanced NLP capabilities."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    excerpt: "Placeholder for NLP language model generating human-like text."
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
   # - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
   #   title: "Placeholder 3"
   #   excerpt: "This is some sample content that goes here with **Markdown** formatting."
@@ -94,16 +94,24 @@ language-model-for-text-generation:
 ## Hi, I'm Alejandro!
 
 {: .text-justify}
-I am a **Data Scientist** and **Machine Learning Engineer** with a background in **Physics** (PhD) and a passion for leveraging data to solve complex real-world problems. My expertise lies at the intersection of machine learning, data analysis, and scientific research, and I thrive on translating raw data into actionable insights.
+I'm a **Data Scientist** and **Machine Learning Engineer** with a PhD in **Physics**, specializing in using data and code to solve complex problems. My expertise blends scientific research with modern machine learning practices, and I'm currently transitioning my academic rigor into scalable, data-driven solutions.
+
+<p align="center">
+  <a class="btn btn--primary" href="mailto:alejandromatiasastorga@gmail.com">Contact Me</a>
+  <a class="btn btn--inverse" href="https://www.linkedin.com/in/alexmatiasastorga/" target="_blank">Connect on LinkedIn</a>
+</p>
 
 {% include feature_row id="home_feature_row"%}
 
 # <i class="fas fa-project-diagram"></i> Featured projects
 
-Here are some of my most impactful projects. For a full list, visit my [Projects](./projects) page.
+These are placeholders for my in-progress portfolio. Visit the [Projects](./projects) page for updates as they are completed.
 
-<!-- {% include gallery caption="This is a sample gallery with **Markdown support**." %} -->
 {% include feature_row id="fraud-detection" type="left" %}
 {% include feature_row id="real-time-object-detection" type="left" %}
 {% include feature_row id="customer-recommendation-system" type="left" %}
 {% include feature_row id="language-model-for-text-generation" type="left" %}
+
+<div class="notice--info">
+  <strong>Note:</strong> These projects are currently under active development. I’m building this portfolio to reflect real, practical experience in Data Science and Machine Learning. Stay tuned for updates!
+</div>

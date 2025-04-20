@@ -11,7 +11,7 @@ header:
   overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
   overlay_filter: "0.5"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-categories:
+categories: [project]
   - Anomaly Detection
 tags:
   - Classification
