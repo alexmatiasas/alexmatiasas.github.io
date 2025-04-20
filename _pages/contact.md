@@ -12,6 +12,8 @@ Feel free to reach out through [LinkedIn](https://linkedin.com/in/alexmatiasasto
 ### Contact form
 
 <form action="https://formspree.io/f/{{ site.formspree_form_id }}" method="POST">
+  <input type="hidden" name="_redirect" value="https://alexmatiasas.github.io/thank-you/" />
+
   <label for="name">Your name:</label>
   <input type="text" name="name" id="name" required>
 
