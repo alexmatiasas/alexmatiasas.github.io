@@ -22,15 +22,15 @@ toc_skin: "blue"
 
 
 language-model-for-text-generation:
-  - url: /posts/2016-07-20-text-generation
+  - url: /2016-07-20-text-generation
     image_path: assets/images/text-generator.jpg
     alt: "Text Generation"
     title: ""
     excerpt: "Trained a language model to generate human-like text based on input prompts, showcasing advanced NLP capabilities."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 sentiment-analysis:
-  - url: /posts/2016-07-20-sentiment-analysis
+  - url: /2025-04-21-sentiment-analysis
     image_path: /assets/images/sentiments.jpg
     alt: "Sentiment Analysis"
     title: ""
@@ -38,70 +38,79 @@ sentiment-analysis:
     btn_label: "Read More"
     btn_class: "btn--info"
 language-model:
-  - url: /posts/2016-07-20-language-model
+  - url: /2016-07-20-language-model
     image_path: assets/images/language-model.jpg
     alt: "Language Model"
     title: ""
     excerpt: "Developed a custom language model for specific language tasks, improving predictive text capabilities."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 image-classification:
-  - url: /posts/2016-07-20-image-classification
+  - url: /2016-07-20-image-classification
     image_path: assets/images/image-classification.jpg
     alt: "Image Classificarion"
     title: ""
     excerpt: "Developed a convolutional neural network (CNN) to classify images into predefined categories with high accuracy."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 image-recognition:
-  - url: /posts/2016-07-20-image-recognition
+  - url: /2016-07-20-image-recognition
     image_path: assets/images/image-recognition.jpg
     alt: "Image Recognition"
     title: ""
     excerpt: "Built an image recognition system to identify objects and landmarks in images, demonstrating skills in deep learning for computer vision."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 real-time-object-detection:
-  - url: /posts/2016-07-20-object-detection
+  - url: /2016-07-20-object-detection
     image_path:  /assets/images/object-detection.jpg
     alt: "Real Time Object Detection"
     title: ""
     excerpt: "Developed a real-time object detection model using YOLO to identify and classify objects in video streams, optimized for high-speed processing."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 customer-recommendation-system:
-  - url: /posts/2016-07-20-recomendation-system
+  - url: /2016-07-20-recomendation-system
     image_path:  /assets/images/recomendation-system.jpg
     alt: "Customer Recommendation System"
     title: ""
     excerpt: "Created a personalized recommendation system using collaborative filtering to enhance customer engagement for e-commerce."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 real-time-data-processing:
-  - url: /posts/2016-07-20-real-time-data-processing
+  - url: /2016-07-20-real-time-data-processing
     image_path:  assets/images/real-time-data-processing.jpg
     alt: "Real-Time Data Processing"
     title: ""
     excerpt: "Designed a pipeline for processing data streams in real time, integrating Apache Kafka and Spark for scalable processing."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 fraud-detection:
-  - url: /posts/2016-07-20-fraud-detection
+  - url: /2016-07-20-fraud-detection
     image_path:  /assets/images/fraud-detection.jpg
     alt: "Fraud Detection"
     title: ""
     excerpt: "Built a machine learning model to detect fraudulent transactions with high accuracy, leveraging ensemble methods like Random Forest and Gradient Boosting."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 use-patterns-analysis:
-  - url: /posts/2016-07-20-use-patterns
+  - url: /2016-07-20-use-patterns
     image_path:  assets/images/use-patterns.jpg
     alt: "Use Patterns Analysis"
     title: ""
     excerpt: "Analyzed user behavior data to identify patterns and trends, providing actionable insights for customer engagement."
-    btn_label: "Read More"
-    btn_class: "btn--info"
+    btn_label: "Coming Soon"
+    btn_class: "btn--light"
 ---
+
+## 🔧 Project Progress
+
+| Project                  | Status        | Progress        |
+|--------------------------|---------------|-----------------|
+| Sentiment Analysis       | In Progress   | 🔵🔵🔵🔵⚪⚪⚪⚪⚪⚪ (40%) |
+| Object Detection         | Planned       | 🔵⚪⚪⚪⚪⚪⚪⚪⚪⚪ (10%) |
+| Recommendation System    | Planned       | ⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ (0%)  |
+| Text Generation          | Planned       | ⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪ (0%)  |
 
 # Natural Language Processing (NLP)
 

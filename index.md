@@ -78,14 +78,14 @@ customer-recommendation-system:
     excerpt: "Placeholder for collaborative filtering recommendation engine."
     btn_label: "Coming Soon"
     btn_class: "btn--light"
-language-model-for-text-generation:
-  - url: /posts/2016-07-20-text-generation
-    image_path: assets/images/text-generator.jpg
-    alt: "Text Generation"
-    title: "Text Generation"
-    excerpt: "Placeholder for NLP language model generating human-like text."
-    btn_label: "Coming Soon"
-    btn_class: "btn--light"
+sentiment-analysis:
+  - url: /2025-04-21-sentiment-analysis
+    image_path: /assets/images/sentiments.jpg
+    alt: "Sentiment Analysis"
+    title: ""
+    excerpt: "Built a sentiment analysis model to classify text as positive or negative, useful for customer feedback and social media analysis."
+    btn_label: "Read More"
+    btn_class: "btn--info"
   # - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
   #   title: "Placeholder 3"
   #   excerpt: "This is some sample content that goes here with **Markdown** formatting."
@@ -107,10 +107,10 @@ I'm a **Data Scientist** and **Machine Learning Engineer** with a PhD in **Physi
 
 These are placeholders for my in-progress portfolio. Visit the [Projects](./projects) page for updates as they are completed.
 
+{% include feature_row id="sentiment-analysis" type="left" %}
 {% include feature_row id="fraud-detection" type="left" %}
 {% include feature_row id="real-time-object-detection" type="left" %}
 {% include feature_row id="customer-recommendation-system" type="left" %}
-{% include feature_row id="language-model-for-text-generation" type="left" %}
 
 <div class="notice--info">
   <strong>Note:</strong> These projects are currently under active development. I’m building this portfolio to reflect real, practical experience in Data Science and Machine Learning. Stay tuned for updates!

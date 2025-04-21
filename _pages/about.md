@@ -34,14 +34,14 @@ customer-recommendation-system:
     excerpt: "Placeholder for collaborative filtering recommendation engine."
     btn_label: "Coming Soon"
     btn_class: "btn--light"
-language-model-for-text-generation:
-  - url: /posts/2016-07-20-text-generation
-    image_path: assets/images/text-generator.jpg
-    alt: "Text Generation"
-    title: "Text Generation"
-    excerpt: "Placeholder for NLP language model generating human-like text."
-    btn_label: "Coming Soon"
-    btn_class: "btn--light"
+sentiment-analysis:
+  - url: /2025-04-21-sentiment-analysis
+    image_path: /assets/images/sentiments.jpg
+    alt: "Sentiment Analysis"
+    title: ""
+    excerpt: "Built a sentiment analysis model to classify text as positive or negative, useful for customer feedback and social media analysis."
+    btn_label: "Read More"
+    btn_class: "btn--info"
 ---
 {: .text-justify}
 Hi, I'm Alejandro — a Physicist turned Data Scientist with a passion for solving complex problems through data. From quarks to queries, my journey has taken me from academic research to the world of Machine Learning and AI.
@@ -142,10 +142,10 @@ Here are some of the projects I plan to build and showcase soon. 🚧 Work In Pr
 
 Stay tuned!
 
+{% include feature_row id="sentiment-analysis" type="left" %}
 {% include feature_row id="fraud-detection" type="left" %}
 {% include feature_row id="real-time-object-detection" type="left" %}
 {% include feature_row id="customer-recommendation-system" type="left" %}
-{% include feature_row id="language-model-for-text-generation" type="left" %}
 
 
 <!-- 
