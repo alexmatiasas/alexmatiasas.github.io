@@ -7,7 +7,7 @@ author_profile: true
 <!-- {: .text-justify} -->
 Feel free to reach out through [LinkedIn](https://linkedin.com/in/alexmatiasastorga) or send me an email at [alejandromatiasastorga@gmail.com](mailto: alejandromatiasastorga@gmail.com). I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
 
-[Download my CV](../CV/Manuel Alejandro Matías Astorga CV ENG.pdf){: .btn .btn--inverse}
+[Download my CV](../CV/ManuelAlejandroMatiasAstorga-CV.pdf){: .btn .btn--inverse}
 
 ### Contact form
 

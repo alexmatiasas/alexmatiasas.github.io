@@ -12,7 +12,7 @@ header:
   overlay_image: /assets/images/teaser.jpg
   actions:
     - label: "Download my CV"
-      url: "CV/CV_Data_science.pdf"
+      url: "CV/ManuelAlejandroMatiasAstorga-CV.pdf"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 classes:
   - landing

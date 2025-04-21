@@ -51,12 +51,14 @@ The first phase leverages R’s rich ecosystem for text manipulation and data vi
 
 ## 📈 Visualizations Preview
 
-Some of the visualizations in the RPubs notebook include:
+Some of the visualizations in the EDA notebook include:
 
 - Word frequency lollipop charts
 - Sentiment-based word clouds
 - N-gram distribution (bigrams & trigrams)
 - Polarity sentiment barplots
+
+🚧 _Interactive notebook will be available soon via RPubs._
 
 ➡️ [Explore the full interactive report here](https://rpubs.com/tu_usuario/tu_publicacion)
 
@@ -64,8 +66,13 @@ Some of the visualizations in the RPubs notebook include:
 
 ## 📘 Full Exploratory Report
 
-🔗 [View the full EDA on RPubs](https://rpubs.com/tu_usuario_o_url_del_EDA)  
+🛠️ _The full report with interactive visualizations is currently being compiled and will be published shortly on RPubs._
+
+<!-- Uncomment and update once published:
+🔗 [View the full EDA on RPubs](https://rpubs.com/alexmatiasas/01_EDA)  
 _(Hosted via RStudio's RPubs; includes interactive visuals and data breakdown)_
+-->
+
 
 ---
 
@@ -83,11 +90,13 @@ _(Hosted via RStudio's RPubs; includes interactive visuals and data breakdown)_
 
 ## 🧾 Deliverables
 
-- [`sentiment-analysis.Rmd`](https://rpubs.com/tu_usuario/tu_publicacion) — Core analysis (published on RPubs)
-- `IMDB-cleaned.csv` — Cleaned dataset (not public due to size, available on request)
-- [ ] `model_sentiment.py` — Machine learning model (coming soon)
-- [ ] Streamlit dashboard or deployment interface (planned)
-- [GitHub repository (in process)](https://github.com/alexmatiasas/Sentiment-Analysis)
+## 🧾 Deliverables
+
+- [`01_EDA.Rmd`](https://github.com/alexmatiasas/Sentiment-Analysis/blob/main/notebooks/01_EDA.Rmd) — Core notebook (R-based)
+- Cleaned datasets (stemmed, lemmatized, udpipe); export planned for modeling phase
+- _EDA report (RPubs) — Coming soon_
+- `model_sentiment.py` — (Coming soon)
+- Streamlit or Apache Spark deployment — (Planned)
 
 ---
 
@@ -107,5 +116,7 @@ _(Hosted via RStudio's RPubs; includes interactive visuals and data breakdown)_
 🔗 [View this project on GitHub](https://github.com/alexmatiasas/Sentiment-Analysis)
 
 ---
+
+📌 _Note: This project is currently in Phase 1 (EDA & preprocessing). The modeling and deployment phase will follow shortly._
 
 _Last updated: 2025-04-20_
