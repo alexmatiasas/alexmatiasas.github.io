@@ -24,7 +24,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Manuel Alejandro Matías Astorga Data Science Portfolio">
 <meta property="og:title" content="Manuel Alejandro Matías Astorga Data Science Portfolio">
-<meta property="og:url" content="https://alexmatiasas.github.io/2016-07-20-use-patterns/">
+<meta property="og:url" content="https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/">
 
 
   <meta property="og:description" content="A showcase of my Data Science and Machine Learning projects.">
@@ -38,7 +38,7 @@
   <meta name="twitter:site" content="@alexmatiasas">
   <meta name="twitter:title" content="Manuel Alejandro Matías Astorga Data Science Portfolio">
   <meta name="twitter:description" content="A showcase of my Data Science and Machine Learning projects.">
-  <meta name="twitter:url" content="https://alexmatiasas.github.io/2016-07-20-use-patterns/">
+  <meta name="twitter:url" content="https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/">
 
   
     <meta name="twitter:card" content="summary">
@@ -62,7 +62,7 @@
   
 
 
-<link rel="canonical" href="https://alexmatiasas.github.io/2016-07-20-use-patterns/">
+<link rel="canonical" href="https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/">
 
 
 
@@ -367,7 +367,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -382,33 +382,119 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#use-patterns-project">Use patterns Project</a><ul><li><a href="#project-overview">Project Overview</a></li><li><a href="#dataset-and-preprocessing">Dataset and Preprocessing</a></li><li><a href="#model-and-evaluation">Model and Evaluation</a></li><li><a href="#conclusions">Conclusions</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#-project-overview">🎯 Project Overview</a></li><li><a href="#️-tools--libraries">🛠️ Tools &amp; Libraries</a></li><li><a href="#-key-explorations">📊 Key Explorations</a></li><li><a href="#-visualizations-preview">📈 Visualizations Preview</a></li><li><a href="#-full-exploratory-report">📘 Full Exploratory Report</a></li><li><a href="#-next-steps">🔮 Next Steps</a></li><li><a href="#-deliverables">🧾 Deliverables</a></li><li><a href="#-outcome">📌 Outcome</a></li><li><a href="#-what-i-learned">🧠 What I Learned</a></li></ul>
             </nav>
           </aside>
         
-        <h1 id="use-patterns-project">Use patterns Project</h1>
+        <h2 id="-project-overview">🎯 Project Overview</h2>
 
-<h2 id="project-overview">Project Overview</h2>
-<p>This project uses machine learning algorithms to detect use patterns.</p>
+<p>This project analyzes a dataset of <strong><a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">50,000 IMDb movie reviews</a></strong>, each labeled as <em>positive</em> or <em>negative</em>. The goal is to classify sentiment through a two-phase workflow:</p>
 
-<!-- 
+<ol>
+  <li><strong>Exploratory Data Analysis and preprocessing in R</strong></li>
+  <li><strong>Sentiment classification modeling and deployment in Python</strong></li>
+</ol>
 
--  Procesa grandes cantidades de logs de servidor para detectar patrones de uso.
-	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
-	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
+<p>The first phase leverages R’s rich ecosystem for text manipulation and data visualization. The second phase (in progress) will involve training ML models and deploying a classifier using Python.</p>
 
- -->
+<hr />
 
-<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
-<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
+<h2 id="️-tools--libraries">🛠️ Tools &amp; Libraries</h2>
 
-<h2 id="model-and-evaluation">Model and Evaluation</h2>
-<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
+<ul>
+  <li><strong>R</strong>: <code class="language-plaintext highlighter-rouge">tidyverse</code>, <code class="language-plaintext highlighter-rouge">tidytext</code>, <code class="language-plaintext highlighter-rouge">ggplot2</code>, <code class="language-plaintext highlighter-rouge">udpipe</code>, <code class="language-plaintext highlighter-rouge">SnowballC</code>, <code class="language-plaintext highlighter-rouge">textstem</code>, <code class="language-plaintext highlighter-rouge">DT</code></li>
+  <li><strong>Python</strong> (planned): <code class="language-plaintext highlighter-rouge">scikit-learn</code>, <code class="language-plaintext highlighter-rouge">nltk</code>, <code class="language-plaintext highlighter-rouge">pandas</code>, <code class="language-plaintext highlighter-rouge">matplotlib</code>, <code class="language-plaintext highlighter-rouge">PyTorch</code></li>
+  <li><strong>Techniques</strong>: Tokenization, POS tagging, stemming, lemmatization, n-grams, polarity</li>
+  <li><strong>Format</strong>: R Markdown (<code class="language-plaintext highlighter-rouge">.Rmd</code>) → HTML (via RPubs)</li>
+</ul>
 
-<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
+<hr />
 
-<h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>
+<h2 id="-key-explorations">📊 Key Explorations</h2>
+
+<ul>
+  <li>Sentiment class distribution and review length analysis</li>
+  <li>HTML cleaning, stopword removal, punctuation &amp; casing normalization</li>
+  <li><strong>POS tagging</strong> using <code class="language-plaintext highlighter-rouge">udpipe</code></li>
+  <li><strong>Stemming</strong> (<code class="language-plaintext highlighter-rouge">SnowballC</code>) and <strong>lemmatization</strong> (<code class="language-plaintext highlighter-rouge">textstem</code>)</li>
+  <li><strong>N-gram analysis</strong> for phrase structure insight</li>
+</ul>
+
+<hr />
+
+<h2 id="-visualizations-preview">📈 Visualizations Preview</h2>
+
+<p>Some of the visualizations in the RPubs notebook include:</p>
+
+<ul>
+  <li>Word frequency lollipop charts</li>
+  <li>Sentiment-based word clouds</li>
+  <li>N-gram distribution (bigrams &amp; trigrams)</li>
+  <li>Polarity sentiment barplots</li>
+</ul>
+
+<p>➡️ <a href="https://rpubs.com/tu_usuario/tu_publicacion">Explore the full interactive report here</a></p>
+
+<hr />
+
+<h2 id="-full-exploratory-report">📘 Full Exploratory Report</h2>
+
+<p>🔗 <a href="https://rpubs.com/tu_usuario_o_url_del_EDA">View the full EDA on RPubs</a><br />
+<em>(Hosted via RStudio’s RPubs; includes interactive visuals and data breakdown)</em></p>
+
+<hr />
+
+<h2 id="-next-steps">🔮 Next Steps</h2>
+
+<ul>
+  <li>Export cleaned data to <code class="language-plaintext highlighter-rouge">.csv</code> for model training</li>
+  <li>Build classifiers using:
+    <ul>
+      <li>Logistic Regression &amp; Naive Bayes (baseline)</li>
+      <li>Pipeline-based ML models (<code class="language-plaintext highlighter-rouge">scikit-learn</code>)</li>
+      <li>Deep learning model using <code class="language-plaintext highlighter-rouge">PyTorch</code> (planned)</li>
+    </ul>
+  </li>
+  <li>Evaluation: <strong>Confusion Matrix</strong>, <strong>F1 Score</strong>, <strong>ROC-AUC</strong></li>
+  <li>Optionally deploy via <strong>Streamlit</strong> or <strong>Apache Spark</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="-deliverables">🧾 Deliverables</h2>
+
+<ul class="task-list">
+  <li><a href="https://rpubs.com/tu_usuario/tu_publicacion"><code class="language-plaintext highlighter-rouge">sentiment-analysis.Rmd</code></a> — Core analysis (published on RPubs)</li>
+  <li><code class="language-plaintext highlighter-rouge">IMDB-cleaned.csv</code> — Cleaned dataset (not public due to size, available on request)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="language-plaintext highlighter-rouge">model_sentiment.py</code> — Machine learning model (coming soon)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Streamlit dashboard or deployment interface (planned)</li>
+  <li class="task-list-item"><a href="https://github.com/alexmatiasas/Sentiment-Analysis">GitHub repository (in process)</a></li>
+</ul>
+
+<hr />
+
+<h2 id="-outcome">📌 Outcome</h2>
+
+<blockquote>
+  <p>Completed a robust EDA and text processing pipeline in R.<br />
+Laying the foundation for cross-platform sentiment classification with Python.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="-what-i-learned">🧠 What I Learned</h2>
+
+<ul>
+  <li>R is powerful for quick and elegant EDA and text visualization.</li>
+  <li>Handling natural language data requires both linguistic and statistical intuition.</li>
+  <li>Preprocessing choices (e.g., stemming vs lemmatization) can deeply affect downstream model performance.</li>
+</ul>
+
+<p>🔗 <a href="https://github.com/alexmatiasas/Sentiment-Analysis">View this project on GitHub</a></p>
+
+<hr />
+
+<p><em>Last updated: 2025-04-20</em></p>
 
         
       </section>
@@ -427,23 +513,22 @@
       <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=%20https%3A%2F%2Falexmatiasas.github.io%2F2016-07-20-use-patterns%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=%20https%3A%2F%2Falexmatiasas.github.io%2F2025-04-21-sentiment-analysis%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2F2016-07-20-use-patterns%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2F2025-04-21-sentiment-analysis%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/2016-07-20-use-patterns/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2016-07-20-text-generation/" class="pagination--pager" title="
+      <a href="/2016-07-20-use-patterns/" class="pagination--pager" title="
 ">Previous</a>
     
     
-      <a href="/2025-04-21-sentiment-analysis/" class="pagination--pager" title="
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -474,7 +559,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/2025-04-21-sentiment-analysis/" rel="permalink">
+        <a href="/2016-07-20-use-patterns/" rel="permalink">
 </a>
       
     </h2>
@@ -492,7 +577,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
         
       </span>
     
