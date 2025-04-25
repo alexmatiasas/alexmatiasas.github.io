@@ -35,7 +35,15 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
-<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<title>
+  {% if page.seo.title %}
+    {{ page.seo.title }}
+  {% elsif page.title %}
+    {{ page.title }}{{ site.title_separator }}{{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}

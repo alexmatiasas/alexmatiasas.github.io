@@ -1,9 +1,8 @@
 ---
 layout: splash
 title: "Welcome to My Data Science Portfolio!"
-# Esto sobrescribe el <title> de la pestaña
 seo:
-  title: "Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects" 
+  title: "Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects"
 excerpt: "Explore real-world projects and insights in Data Science, Machine Learning, and AI."
 permalink: /
 author_profile: true
