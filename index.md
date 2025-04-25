@@ -1,6 +1,9 @@
 ---
 layout: splash
 title: "Welcome to My Data Science Portfolio!"
+# Esto sobrescribe el <title> de la pestaña
+seo:
+  title: "Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects" 
 excerpt: "Explore real-world projects and insights in Data Science, Machine Learning, and AI."
 permalink: /
 author_profile: true
@@ -115,3 +118,7 @@ These are placeholders for my in-progress portfolio. Visit the [Projects](./proj
 <div class="notice--info">
   <strong>Note:</strong> These projects are currently under active development. I’m building this portfolio to reflect real, practical experience in Data Science and Machine Learning. Stay tuned for updates!
 </div>
+
+<!-- bundle exec jekyll serve -->
+
+<title>Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects</title>

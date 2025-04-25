@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US" #"es-MX" # "en-US"
 rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Manuel Alejandro Matías Astorga Data Science Portfolio"
+title                    : "Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects"
 title_separator          : "-"
 subtitle                 : by Manuel Alejandro Matías Astorga
 name                     : "Manuel Alejandro Matías Astorga"
@@ -31,7 +31,7 @@ masthead_title           : "Data Science Portfolio"
 breadcrumbs              : true
 words_per_minute         : 250
 enable_copy_code_button  : true
-copyright                : "© 2025 Manuel Alejandro Matías Astorga" # "copyright" name, defaults to site.title
+copyright                : "Manuel Alejandro Matías Astorga" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : false # "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
