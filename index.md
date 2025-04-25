@@ -35,7 +35,7 @@ classes:
 
 home_feature_row:
   - url: /projects
-    image_path:  assets/images/projects.jpg
+    image_path:  assets/images/projects.jpeg
     alt: "Projects"
     title: "Projects"
     excerpt: "Explore a growing collection of real-world applications in Data Science, from Sentiment Analysis to Fraud Detection."
