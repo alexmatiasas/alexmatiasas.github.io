@@ -11,13 +11,13 @@ toc_icon: "list"
 toc_sticky: true
 
 fraud-detection:
-  - url: /posts/2016-07-20-fraud-detection
+  - url: /posts/2025-05-12-fraud-detection
     image_path: /assets/images/fraud-detection.jpg
     alt: "Fraud Detection"
     title: "Fraud Detection"
-    excerpt: "Placeholder for upcoming project: ML model to detect fraudulent transactions using ensemble methods."
-    btn_label: "Coming Soon"
-    btn_class: "btn--light"
+    excerpt: "Machine Learning model to detect fraudulent transactions using ensemble methods."
+    btn_label: "Read More"
+    btn_class: "btn--info"
 real-time-object-detection:
   - url: /posts/2016-07-20-object-detection
     image_path: /assets/images/object-detection.jpg

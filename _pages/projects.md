@@ -86,13 +86,13 @@ real-time-data-processing:
     btn_label: "Coming Soon"
     btn_class: "btn--light"
 fraud-detection:
-  - url: /2016-07-20-fraud-detection
+  - url: /2025-05-12-fraud-detection
     image_path:  /assets/images/fraud-detection.jpg
     alt: "Fraud Detection"
     title: ""
     excerpt: "Built a machine learning model to detect fraudulent transactions with high accuracy, leveraging ensemble methods like Random Forest and Gradient Boosting."
-    btn_label: "Coming Soon"
-    btn_class: "btn--light"
+    btn_label: "Read More"
+    btn_class: "btn--info"
 use-patterns-analysis:
   - url: /2016-07-20-use-patterns
     image_path:  assets/images/use-patterns.jpg

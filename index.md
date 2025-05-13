@@ -57,13 +57,13 @@ home_feature_row:
     btn_class: "btn--primary"
 
 fraud-detection:
-  - url: /posts/2016-07-20-fraud-detection
+  - url: /2025-05-12-fraud-detection
     image_path: /assets/images/fraud-detection.jpg
     alt: "Fraud Detection"
     title: "Fraud Detection"
-    excerpt: "Placeholder for upcoming project: ML model to detect fraudulent transactions using ensemble methods."
-    btn_label: "Coming Soon"
-    btn_class: "btn--light"
+    excerpt: "Machine Learning model to detect fraudulent transactions using ensemble methods."
+    btn_label: "Read More"
+    btn_class: "btn--info"
 real-time-object-detection:
   - url: /posts/2016-07-20-object-detection
     image_path: /assets/images/object-detection.jpg
@@ -84,7 +84,7 @@ sentiment-analysis:
   - url: /2025-04-21-sentiment-analysis
     image_path: /assets/images/sentiments.jpg
     alt: "Sentiment Analysis"
-    title: ""
+    title: "Sentiment Analysis"
     excerpt: "Built a sentiment analysis model to classify text as positive or negative, useful for customer feedback and social media analysis."
     btn_label: "Read More"
     btn_class: "btn--info"
