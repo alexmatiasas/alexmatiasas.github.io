@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://alexmatiasas.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alexmatiasas.github.io/" rel="alternate" type="text/html" /><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/feed.xml</id><title type="html">Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning &amp;amp; AI Projects</title><subtitle>A showcase of my Data Science and Machine Learning projects.</subtitle><author><name>Manuel Alejandro Matías Astorga</name></author><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-fraud-detection/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-fraud-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-fraud-detection/"><![CDATA[<h2 id="project-overview">Project Overview</h2>
-<p>This project uses machine learning algorithms to detect fraudulent transactions.</p>
-
-<!-- 
-	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
-	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
-
- -->
-
-<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
-<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
-
-<h2 id="model-and-evaluation">Model and Evaluation</h2>
-<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
-
-<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
-
-<h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-classification/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-classification</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-classification/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://alexmatiasas.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alexmatiasas.github.io/" rel="alternate" type="text/html" /><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/feed.xml</id><title type="html">Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning &amp;amp; AI Projects</title><subtitle>A showcase of my Data Science and Machine Learning projects.</subtitle><author><name>Manuel Alejandro Matías Astorga</name></author><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-classification/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-classification</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-classification/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct an image classificator.</p>
@@ -69,7 +51,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-recognition/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-recognition</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-recognition/"><![CDATA[<h1 id="image-recognition-project">Image recognition Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-image-recognition/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-image-recognition</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-image-recognition/"><![CDATA[<h1 id="image-recognition-project">Image recognition Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a recognizer of images.</p>
@@ -91,7 +73,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-language-model/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-language-model</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-language-model/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-language-model/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-language-model</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-language-model/"><![CDATA[<h1 id="language-model-project">Language model Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a language model.</p>
@@ -113,7 +95,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-object-detection/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-object-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-object-detection/"><![CDATA[<h1 id="object-detection-project">Object detection Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-object-detection/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-object-detection</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-object-detection/"><![CDATA[<h1 id="object-detection-project">Object detection Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a text generator.</p>
@@ -135,7 +117,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-real-time-data-processing</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/"><![CDATA[<h1 id="real-time-data-processing-project">Real time data processing Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-real-time-data-processing</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-real-time-data-processing/"><![CDATA[<h1 id="real-time-data-processing-project">Real time data processing Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to analize real time data.</p>
@@ -157,7 +139,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-recomendation-system/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-recomendation-system</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-recomendation-system/"><![CDATA[<h1 id="recommendation-system-project">Recommendation system Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-recomendation-system/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-recomendation-system</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-recomendation-system/"><![CDATA[<h1 id="recommendation-system-project">Recommendation system Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to recommend things.</p>
@@ -214,10 +196,10 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-sentiment-analysis</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/"><![CDATA[<h1 id="sentiment-analysis-project">Sentiment Analysis Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-sentiment-analysis</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-sentiment-analysis/"><![CDATA[<h1 id="sentiment-analysis-project">Sentiment Analysis Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
-<p>This project analyzes a large dataset of <a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">50,000 movie reviews from IMDb</a>, classifying them into positive or negative sentiments. It is designed to demonstrate NLP preprocessing, exploratory data analysis, and sentiment quantification using R. The project is fully documented in an .Rmd report with visualizations and interactive elements.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-text-generation/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-text-generation</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-text-generation/"><![CDATA[<h1 id="text-generator-project">Text generator Project</h1>
+<p>This project analyzes a large dataset of <a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">50,000 movie reviews from IMDb</a>, classifying them into positive or negative sentiments. It is designed to demonstrate NLP preprocessing, exploratory data analysis, and sentiment quantification using R. The project is fully documented in an .Rmd report with visualizations and interactive elements.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-text-generation/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-text-generation</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-text-generation/"><![CDATA[<h1 id="text-generator-project">Text generator Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to construct a text generator.</p>
@@ -239,7 +221,7 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-use-patterns/" rel="alternate" type="text/html" title="" /><published>2025-04-25T10:10:04-06:00</published><updated>2025-04-25T10:10:04-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-use-patterns</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-use-patterns/"><![CDATA[<h1 id="use-patterns-project">Use patterns Project</h1>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2016-07-20-use-patterns/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2016-07-20-use-patterns</id><content type="html" xml:base="https://alexmatiasas.github.io/2016-07-20-use-patterns/"><![CDATA[<h1 id="use-patterns-project">Use patterns Project</h1>
 
 <h2 id="project-overview">Project Overview</h2>
 <p>This project uses machine learning algorithms to detect use patterns.</p>
@@ -261,4 +243,122 @@ Paso a Paso
 <!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
 
 <h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry></feed>
+<p>Summarize the results and future steps.</p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry><entry><title type="html"></title><link href="https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/" rel="alternate" type="text/html" title="" /><published>2025-05-13T01:27:39-06:00</published><updated>2025-05-13T01:27:39-06:00</updated><id>https://alexmatiasas.github.io/2025-04-21-sentiment-analysis</id><content type="html" xml:base="https://alexmatiasas.github.io/2025-04-21-sentiment-analysis/"><![CDATA[<h2 id="-project-overview">🎯 Project Overview</h2>
+
+<p>This project analyzes a dataset of <strong><a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">50,000 IMDb movie reviews</a></strong>, each labeled as <em>positive</em> or <em>negative</em>. The goal is to classify sentiment through a two-phase workflow:</p>
+
+<ol>
+  <li><strong>Exploratory Data Analysis and preprocessing in R</strong></li>
+  <li><strong>Sentiment classification modeling and deployment in Python</strong></li>
+</ol>
+
+<p>The first phase leverages R’s rich ecosystem for text manipulation and data visualization. The second phase (in progress) will involve training ML models and deploying a classifier using Python.</p>
+
+<hr />
+
+<h2 id="️-tools--libraries">🛠️ Tools &amp; Libraries</h2>
+
+<ul>
+  <li><strong>R</strong>: <code class="language-plaintext highlighter-rouge">tidyverse</code>, <code class="language-plaintext highlighter-rouge">tidytext</code>, <code class="language-plaintext highlighter-rouge">ggplot2</code>, <code class="language-plaintext highlighter-rouge">udpipe</code>, <code class="language-plaintext highlighter-rouge">SnowballC</code>, <code class="language-plaintext highlighter-rouge">textstem</code>, <code class="language-plaintext highlighter-rouge">DT</code></li>
+  <li><strong>Python</strong> (planned): <code class="language-plaintext highlighter-rouge">scikit-learn</code>, <code class="language-plaintext highlighter-rouge">nltk</code>, <code class="language-plaintext highlighter-rouge">pandas</code>, <code class="language-plaintext highlighter-rouge">matplotlib</code>, <code class="language-plaintext highlighter-rouge">PyTorch</code></li>
+  <li><strong>Techniques</strong>: Tokenization, POS tagging, stemming, lemmatization, n-grams, polarity</li>
+  <li><strong>Format</strong>: R Markdown (<code class="language-plaintext highlighter-rouge">.Rmd</code>) → HTML (via RPubs)</li>
+</ul>
+
+<hr />
+
+<h2 id="-key-explorations">📊 Key Explorations</h2>
+
+<ul>
+  <li>Sentiment class distribution and review length analysis</li>
+  <li>HTML cleaning, stopword removal, punctuation &amp; casing normalization</li>
+  <li><strong>POS tagging</strong> using <code class="language-plaintext highlighter-rouge">udpipe</code></li>
+  <li><strong>Stemming</strong> (<code class="language-plaintext highlighter-rouge">SnowballC</code>) and <strong>lemmatization</strong> (<code class="language-plaintext highlighter-rouge">textstem</code>)</li>
+  <li><strong>N-gram analysis</strong> for phrase structure insight</li>
+</ul>
+
+<hr />
+
+<h2 id="-visualizations-preview">📈 Visualizations Preview</h2>
+
+<p>Some of the visualizations in the EDA notebook include:</p>
+
+<ul>
+  <li>Word frequency lollipop charts</li>
+  <li>Sentiment-based word clouds</li>
+  <li>N-gram distribution (bigrams &amp; trigrams)</li>
+  <li>Polarity sentiment barplots</li>
+</ul>
+
+<p>🚧 <em>Interactive notebook will be available soon via RPubs.</em></p>
+
+<p>➡️ <a href="https://rpubs.com/tu_usuario/tu_publicacion">Explore the full interactive report here</a></p>
+
+<hr />
+
+<h2 id="-full-exploratory-report">📘 Full Exploratory Report</h2>
+
+<p>🛠️ <em>The full report with interactive visualizations is currently being compiled and will be published shortly on RPubs.</em></p>
+
+<!-- Uncomment and update once published:
+🔗 [View the full EDA on RPubs](https://rpubs.com/alexmatiasas/01_EDA)  
+_(Hosted via RStudio's RPubs; includes interactive visuals and data breakdown)_
+-->
+
+<hr />
+
+<h2 id="-next-steps">🔮 Next Steps</h2>
+
+<ul>
+  <li>Export cleaned data to <code class="language-plaintext highlighter-rouge">.csv</code> for model training</li>
+  <li>Build classifiers using:
+    <ul>
+      <li>Logistic Regression &amp; Naive Bayes (baseline)</li>
+      <li>Pipeline-based ML models (<code class="language-plaintext highlighter-rouge">scikit-learn</code>)</li>
+      <li>Deep learning model using <code class="language-plaintext highlighter-rouge">PyTorch</code> (planned)</li>
+    </ul>
+  </li>
+  <li>Evaluation: <strong>Confusion Matrix</strong>, <strong>F1 Score</strong>, <strong>ROC-AUC</strong></li>
+  <li>Optionally deploy via <strong>Streamlit</strong> or <strong>Apache Spark</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="-deliverables">🧾 Deliverables</h2>
+
+<h2 id="-deliverables-1">🧾 Deliverables</h2>
+
+<ul>
+  <li><a href="https://github.com/alexmatiasas/Sentiment-Analysis/blob/main/notebooks/01_EDA.Rmd"><code class="language-plaintext highlighter-rouge">01_EDA.Rmd</code></a> — Core notebook (R-based)</li>
+  <li>Cleaned datasets (stemmed, lemmatized, udpipe); export planned for modeling phase</li>
+  <li><em>EDA report (RPubs) — Coming soon</em></li>
+  <li><code class="language-plaintext highlighter-rouge">model_sentiment.py</code> — (Coming soon)</li>
+  <li>Streamlit or Apache Spark deployment — (Planned)</li>
+</ul>
+
+<hr />
+
+<h2 id="-outcome">📌 Outcome</h2>
+
+<blockquote>
+  <p>Completed a robust EDA and text processing pipeline in R.<br />
+Laying the foundation for cross-platform sentiment classification with Python.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="-what-i-learned">🧠 What I Learned</h2>
+
+<ul>
+  <li>R is powerful for quick and elegant EDA and text visualization.</li>
+  <li>Handling natural language data requires both linguistic and statistical intuition.</li>
+  <li>Preprocessing choices (e.g., stemming vs lemmatization) can deeply affect downstream model performance.</li>
+</ul>
+
+<p>🔗 <a href="https://github.com/alexmatiasas/Sentiment-Analysis">View this project on GitHub</a></p>
+
+<hr />
+
+<p>📌 <em>Note: This project is currently in Phase 1 (EDA &amp; preprocessing). The modeling and deployment phase will follow shortly.</em></p>
+
+<p><em>Last updated: 2025-04-20</em></p>]]></content><author><name>Manuel Alejandro Matías Astorga</name></author></entry></feed>

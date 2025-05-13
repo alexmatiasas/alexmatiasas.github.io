@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning & AI Projects">
 <meta property="og:title" content="Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning &amp; AI Projects">
-<meta property="og:url" content="https://alexmatiasas.github.io/2016-07-20-fraud-detection/">
+<meta property="og:url" content="https://alexmatiasas.github.io/2025-05-12-fraud-detection/">
 
 
   <meta property="og:description" content="A showcase of my Data Science and Machine Learning projects.">
@@ -42,7 +42,7 @@
   <meta name="twitter:site" content="@alexmatiasas">
   <meta name="twitter:title" content="Manuel Alejandro Matías Astorga | Data Science Portfolio – Machine Learning &amp; AI Projects">
   <meta name="twitter:description" content="A showcase of my Data Science and Machine Learning projects.">
-  <meta name="twitter:url" content="https://alexmatiasas.github.io/2016-07-20-fraud-detection/">
+  <meta name="twitter:url" content="https://alexmatiasas.github.io/2025-05-12-fraud-detection/">
 
   
     <meta name="twitter:card" content="summary">
@@ -55,7 +55,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-04-25T10:10:04-06:00">
+  <meta property="article:published_time" content="2025-05-13T01:27:39-06:00">
 
 
 
@@ -66,7 +66,7 @@
   
 
 
-<link rel="canonical" href="https://alexmatiasas.github.io/2016-07-20-fraud-detection/">
+<link rel="canonical" href="https://alexmatiasas.github.io/2025-05-12-fraud-detection/">
 
 
 
@@ -350,7 +350,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2025-04-25T10:10:04-06:00">
+    <meta itemprop="datePublished" content="2025-05-13T01:27:39-06:00">
     
 
     <div class="page__inner-wrap">
@@ -371,7 +371,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -386,29 +386,115 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#project-overview">Project Overview</a></li><li><a href="#dataset-and-preprocessing">Dataset and Preprocessing</a></li><li><a href="#model-and-evaluation">Model and Evaluation</a></li><li><a href="#conclusions">Conclusions</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-project-overview">📌 Project Overview</a></li><li><a href="#-dataset-and-preprocessing">🧠 Dataset and Preprocessing</a></li><li><a href="#-model-training-and-evaluation">🤖 Model Training and Evaluation</a></li><li><a href="#-testing">🧪 Testing</a></li><li><a href="#️-deployment">🖥️ Deployment</a></li><li><a href="#-conclusion">📌 Conclusion</a></li><li><a href="#-links">🔗 Links</a></li></ul>
             </nav>
           </aside>
         
-        <h2 id="project-overview">Project Overview</h2>
-<p>This project uses machine learning algorithms to detect fraudulent transactions.</p>
+        <h2 id="-project-overview">📌 Project Overview</h2>
 
-<!-- 
-	•	Ingeniería de características: Trabaja en mejorar la calidad de los datos de entrada.
-	•	Tuning de hiperparámetros: Experimenta con la búsqueda de hiperparámetros (Grid Search, Random Search) y técnicas como optimización bayesiana.
+<p>This project implements a complete machine learning pipeline to detect fraudulent transactions using the <a href="https://www.kaggle.com/c/ieee-fraud-detection">IEEE-CIS dataset</a>. It includes:</p>
 
- -->
+<ul>
+  <li>Deep EDA in <strong>R</strong> and <strong>Python</strong></li>
+  <li>Robust preprocessing and feature engineering</li>
+  <li>Ensemble modeling (XGBoost, LightGBM, CatBoost)</li>
+  <li>A FastAPI deployment for real-time predictions</li>
+  <li>Unit testing with <code class="language-plaintext highlighter-rouge">pytest</code> for pipeline robustness</li>
+</ul>
 
-<h2 id="dataset-and-preprocessing">Dataset and Preprocessing</h2>
-<p>Here you can describe the dataset, preprocessing steps, and challenges in cleaning the data.</p>
+<p>🚀 Check the full repository: <a href="https://github.com/alexmatiasas/Fraud-Detection-with-ML">GitHub</a></p>
 
-<h2 id="model-and-evaluation">Model and Evaluation</h2>
-<p>Outline the models used and display evaluation metrics like accuracy, precision, recall, etc.</p>
+<hr />
 
-<!-- // ![ROC Curve](/assets/images/fraud_detection_roc.png) -->
+<h2 id="-dataset-and-preprocessing">🧠 Dataset and Preprocessing</h2>
 
-<h2 id="conclusions">Conclusions</h2>
-<p>Summarize the results and future steps.</p>
+<p>The dataset contains transaction and identity features, most of them anonymized.</p>
+
+<p>Key steps:</p>
+
+<ul>
+  <li>Merged identity and transaction data</li>
+  <li>Imputed missing values using statistical strategies</li>
+  <li>Encoded categorical variables using <code class="language-plaintext highlighter-rouge">LabelEncoder</code></li>
+  <li>Scaled numerical features using <code class="language-plaintext highlighter-rouge">StandardScaler</code></li>
+  <li>Saved transformers and models using <code class="language-plaintext highlighter-rouge">joblib</code> for reuse in deployment</li>
+</ul>
+
+<hr />
+
+<h2 id="-model-training-and-evaluation">🤖 Model Training and Evaluation</h2>
+
+<p>We trained and compared multiple models:</p>
+
+<ul>
+  <li>Logistic Regression</li>
+  <li>Random Forest</li>
+  <li>XGBoost</li>
+  <li>LightGBM</li>
+  <li>CatBoost</li>
+  <li><strong>Stacking Ensemble</strong> with Logistic Regression as meta-learner</li>
+</ul>
+
+<p>All models were evaluated using:</p>
+
+<ul>
+  <li>Accuracy, Precision, Recall, F1-score</li>
+  <li>ROC-AUC</li>
+  <li>Confusion matrices</li>
+  <li>ROC curves</li>
+</ul>
+
+<p>📊 Results are available in the <a href="https://github.com/alexmatiasas/Fraud-Detection-with-ML/tree/main/reports/figures">reports section</a>.</p>
+
+<hr />
+
+<h2 id="-testing">🧪 Testing</h2>
+
+<p>We implemented tests to ensure pipeline integrity:</p>
+
+<ul>
+  <li>✅ Preprocessing pipeline does not crash with valid data</li>
+  <li>✅ API responds with expected output structure</li>
+  <li>✅ Unit tests managed with <code class="language-plaintext highlighter-rouge">pytest</code></li>
+</ul>
+
+<hr />
+
+<h2 id="️-deployment">🖥️ Deployment</h2>
+
+<p>The final model was deployed using <strong>FastAPI</strong>. Key features:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/predict</code> endpoint returns prediction and fraud probability</li>
+  <li>Interactive Swagger UI available at <code class="language-plaintext highlighter-rouge">/docs</code></li>
+  <li>Can be run locally via Uvicorn or deployed in a Docker container</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uvicorn src.main:app <span class="nt">--reload</span>
+</code></pre></div></div>
+
+<p>Or with Docker</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull alexmatiasastorga/fraud-api:latest
+docker run <span class="nt">-d</span> <span class="nt">-p</span> 8000:8000 alexmatiasastorga/fraud-api
+</code></pre></div></div>
+
+<h2 id="-conclusion">📌 Conclusion</h2>
+
+<p>This project demonstrates a real-world machine learning workflow from raw data to deployment. Future improvements may include:</p>
+
+<ul>
+  <li>DAG automation with Apache Airflow</li>
+  <li>Cloud deployment (Render or AWS)</li>
+  <li>Monitoring with MLFlow or Prometheus</li>
+</ul>
+
+<h2 id="-links">🔗 Links</h2>
+
+<ul>
+  <li>🔍 <a href="https://github.com/alexmatiasas/Fraud-Detection-with-ML">Project Repository</a></li>
+  <li>🐳 <a href="https://hub.docker.com/r/alexmatiasastorga/fraud-api">Docker Image</a></li>
+</ul>
 
         
       </section>
@@ -420,30 +506,29 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-25T10:10:04-06:00">April 25, 2025</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-05-13T01:27:39-06:00">May 13, 2025</time></p>
 
       </footer>
 
       <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=%20https%3A%2F%2Falexmatiasas.github.io%2F2016-07-20-fraud-detection%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=alexmatiasas&text=%20https%3A%2F%2Falexmatiasas.github.io%2F2025-05-12-fraud-detection%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2F2016-07-20-fraud-detection%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falexmatiasas.github.io%2F2025-05-12-fraud-detection%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/2016-07-20-fraud-detection/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alexmatiasas.github.io/2025-05-12-fraud-detection/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/blog/building-portfolio-from-scratch/" class="pagination--pager" title="How I’m Building My Data Science Portfolio From Scratch
+      <a href="/2025-04-21-sentiment-analysis/" class="pagination--pager" title="
 ">Previous</a>
     
     
-      <a href="/2016-07-20-image-classification/" class="pagination--pager" title="
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
