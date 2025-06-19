@@ -23,6 +23,7 @@ codekit-config.json
 
 # macOS
 .DS_Store
+how_to_run.md
 
 # Jekyll generated files
 .jekyll-cache

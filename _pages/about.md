@@ -50,36 +50,36 @@ Hi, I'm Alejandro — a Physicist turned Data Scientist with a passion for solvi
 
 ### Programming Languages
 
-**[<img src="/assets/images/Python.svg" alt="Python" width=20 height=20> Python](https://www.python.org)** | **[<img src="/assets/images/R.svg" alt="R" width=20 height=2> R](https://www.r-project.org)** 
-**<i class="fa-solid fa-database"></i> SQL**: | [<img src="/assets/images/PostgresSQL.svg" alt="PostgresSQL" width=25 height=25> (Familiar with) PostgresSQL](https://www.postgresql.org) | [<img src="/assets/images/MySQL.svg" alt="MySQL" width=25 height=25> (Familar with) MySQL](https://www.mysql.com) | [<img src="/assets/images/SQLite.svg" alt="SQLite" width=25 height=25> (Familiar with) SQLite](https://www.sqlite.org) 
-**<i class="fa fa-table" aria-hidden="true"></i> NoSQL**: | [<img src="/assets/images/MongoDB.svg" alt="MongoDB" width=25 height=25> (Familiar with) MongoDB](http://www.mongodb.org) 
+**[<img src="/assets/images/tech/Python.svg" alt="Python" width=20 height=20> Python](https://www.python.org)** | **[<img src="/assets/images/tech/R.svg" alt="R" width=20 height=2> R](https://www.r-project.org)** 
+**<i class="fa-solid fa-database"></i> SQL**: | [<img src="/assets/images/tech/PostgresSQL.svg" alt="PostgresSQL" width=25 height=25> (Familiar with) PostgresSQL](https://www.postgresql.org) | [<img src="/assets/images/tech/MySQL.svg" alt="MySQL" width=25 height=25> (Familar with) MySQL](https://www.mysql.com) | [<img src="/assets/images/tech/SQLite.svg" alt="SQLite" width=25 height=25> (Familiar with) SQLite](https://www.sqlite.org) 
+**<i class="fa fa-table" aria-hidden="true"></i> NoSQL**: | [<img src="/assets/images/tech/MongoDB.svg" alt="MongoDB" width=25 height=25> (Familiar with) MongoDB](http://www.mongodb.org) 
 
 
-<!--| **[<img src="/assets/images/cpp_logo.svg" alt="c_pp" width=20 height=20> C++](https://learn.microsoft.com/en-us/cpp/)** | **[<img src="/assets/images/Java.svg" alt="Java" width=20 height=20> Java](https://www.java.com/)**  # | Cassandra | SQL Server -->
+<!--| **[<img src="/assets/images/tech/cpp_logo.svg" alt="c_pp" width=20 height=20> C++](https://learn.microsoft.com/en-us/cpp/)** | **[<img src="/assets/images/tech/Java.svg" alt="Java" width=20 height=20> Java](https://www.java.com/)**  # | Cassandra | SQL Server -->
 
 ### Data Manipulation & Processing
 
-**Libraries**: | [<img src="/assets/images/NumPy.svg" alt="NumPy" width=20 height=20> NumPy](https://numpy.org) | [<img src="/assets/images/Pandas.svg" alt="Pandas" width=20 height=20> Pandas](https://pandas.pydata.org)
+**Libraries**: | [<img src="/assets/images/tech/NumPy.svg" alt="NumPy" width=20 height=20> NumPy](https://numpy.org) | [<img src="/assets/images/tech/Pandas.svg" alt="Pandas" width=20 height=20> Pandas](https://pandas.pydata.org)
 
-<!--| [<img src="/assets/images/dask-seeklogo.svg" alt="Dask" width=20 height=20> Dask](https://www.dask.org) | [<img src="/assets/images/dbplyr.svg" alt="dplyr" width=20 height=20> dplyr](https://dplyr.tidyverse.org)
-**Big Data Tools**:   [<img src="/assets/images/Apache Spark.svg" alt="Apache Spark" width=20 height=20> Apache Spark](https://spark.apache.org) | [<img src="/assets/images/Apache Hadoop.svg" alt="Apache Hadoop" width=25 height=25> Hadoop](https://hadoop.apache.org)| -->
+<!--| [<img src="/assets/images/tech/dask-seeklogo.svg" alt="Dask" width=20 height=20> Dask](https://www.dask.org) | [<img src="/assets/images/tech/dbplyr.svg" alt="dplyr" width=20 height=20> dplyr](https://dplyr.tidyverse.org)
+**Big Data Tools**:   [<img src="/assets/images/tech/Apache Spark.svg" alt="Apache Spark" width=20 height=20> Apache Spark](https://spark.apache.org) | [<img src="/assets/images/tech/Apache Hadoop.svg" alt="Apache Hadoop" width=25 height=25> Hadoop](https://hadoop.apache.org)| -->
 
 ### Cloud & Deployment Platforms
 
-**Cloud Platforms**: | [<img src="/assets/images/AWS.svg" alt="AWS" width=25 height=25>  (Familiar with) Amazon Web Services (AWS)](https://aws.amazon.com) 
-**Containerization & Orchestration**: | [<img src="/assets/images/Docker.svg" alt="Docker" width=20 height=20> (Familiar with) Docker](https://www.docker.com) 
+**Cloud Platforms**: | [<img src="/assets/images/tech/AWS.svg" alt="AWS" width=25 height=25>  (Familiar with) Amazon Web Services (AWS)](https://aws.amazon.com) 
+**Containerization & Orchestration**: | [<img src="/assets/images/tech/Docker.svg" alt="Docker" width=20 height=20> (Familiar with) Docker](https://www.docker.com) 
 
-<!-- [<img src="/assets/images/Google Cloud.svg" alt="Google Cloud Platform" width=20 height=20> Google Cloud Platform (GCP)](https://cloud.google.com) || [<img src="/assets/images/Azure.svg" alt="Microsoft Azure" width=20 height=20> Microsoft Azure](https://azure.microsoft.com/)  # **ML Serving** | TensorFlow Serving
+<!-- [<img src="/assets/images/tech/Google Cloud.svg" alt="Google Cloud Platform" width=20 height=20> Google Cloud Platform (GCP)](https://cloud.google.com) || [<img src="/assets/images/tech/Azure.svg" alt="Microsoft Azure" width=20 height=20> Microsoft Azure](https://azure.microsoft.com/)  # **ML Serving** | TensorFlow Serving
  **ML Platforms**: | 
 
- **ML Platforms**: | [<img src="/assets/images/SageMaker.svg" alt="AWS SageMaker" width=20 height=20> AWS SageMaker](https://aws.amazon.com/es/sagemaker/)  | [<img src="/assets/images/Kubernetes.svg" alt="Kubernetes" width=20 height=20> Kubernetes](https://kubernetes.io)
- **ML Serving**: | [<img src="/assets/images/Flask.svg" alt="Flask" width=20 height=20> Flask](https://flask.palletsprojects.com/en/stable/)  | [<img src="/assets/images/Streamlit.svg" alt="Streamlit" width=20 height=20> Streamlit](https://streamlit.io) | [<img src="/assets/images/FastAPI.svg" alt="FastAPI" width=20 height=20> FastAPI](https://fastapi.tiangolo.com) 
+ **ML Platforms**: | [<img src="/assets/images/tech/SageMaker.svg" alt="AWS SageMaker" width=20 height=20> AWS SageMaker](https://aws.amazon.com/es/sagemaker/)  | [<img src="/assets/images/tech/Kubernetes.svg" alt="Kubernetes" width=20 height=20> Kubernetes](https://kubernetes.io)
+ **ML Serving**: | [<img src="/assets/images/tech/Flask.svg" alt="Flask" width=20 height=20> Flask](https://flask.palletsprojects.com/en/stable/)  | [<img src="/assets/images/tech/Streamlit.svg" alt="Streamlit" width=20 height=20> Streamlit](https://streamlit.io) | [<img src="/assets/images/tech/FastAPI.svg" alt="FastAPI" width=20 height=20> FastAPI](https://fastapi.tiangolo.com) 
  Google Cloud AI-->
 
 
 ### Machine Learning & AI
 
-**Libraries**: | [<img src="/assets/images/scikit-learn.svg" alt="Scikit-learn" width=40 height=20> (Some experience) Scikit-learn](https://scikit-learn.org/) | [<img src="/assets/images/TensorFlow.svg" alt="Tensor-Flow" width=20 height=20> (Some experience) TensorFlow](https://www.tensorflow.org/) | [<img src="/assets/images/PyTorch.svg" alt="PyTorch" width=20 height=20> (Familiar with) PyTorch](https://pytorch.org/)
+**Libraries**: | [<img src="/assets/images/tech/scikit-learn.svg" alt="Scikit-learn" width=40 height=20> (Some experience) Scikit-learn](https://scikit-learn.org/) | [<img src="/assets/images/tech/TensorFlow.svg" alt="Tensor-Flow" width=20 height=20> (Some experience) TensorFlow](https://www.tensorflow.org/) | [<img src="/assets/images/tech/PyTorch.svg" alt="PyTorch" width=20 height=20> (Familiar with) PyTorch](https://pytorch.org/)
 
 #### Algorithms
 
@@ -97,13 +97,13 @@ Hi, I'm Alejandro — a Physicist turned Data Scientist with a passion for solvi
 
 ### Data Visualization
 
-**Libraries**: | [<img src="/assets/images/Matplotlib.svg" alt="Matplotlib" width=20 height=20> Matplotlib](https://matplotlib.org) | [<img src="/assets/images/Seaborn.svg" alt="Seaborn" width=20 height=20> Seaborn](https://seaborn.pydata.org) | [<img src="/assets/images/Ploty.svg" alt="Plotly" width=20 height=20> Plotly](https://plotly.com) | [<img src="/assets/images/ggplot2.svg" alt="ggplot2" width=25 height=25> ggplot2](https://ggplot2.tidyverse.org)
-**Dashboard Tools**: | [<img src="/assets/images/tableau-svgrepo-com.svg" alt="Tableau" width=100 height=50>Tableau](https://www.tableau.com/) | [<img src="/assets/images/Power_BI.svg" alt="PowerBI" width=20 height=20> PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
+**Libraries**: | [<img src="/assets/images/tech/Matplotlib.svg" alt="Matplotlib" width=20 height=20> Matplotlib](https://matplotlib.org) | [<img src="/assets/images/tech/Seaborn.svg" alt="Seaborn" width=20 height=20> Seaborn](https://seaborn.pydata.org) | [<img src="/assets/images/tech/Ploty.svg" alt="Plotly" width=20 height=20> Plotly](https://plotly.com) | [<img src="/assets/images/tech/ggplot2.svg" alt="ggplot2" width=25 height=25> ggplot2](https://ggplot2.tidyverse.org)
+**Dashboard Tools**: | [<img src="/assets/images/tech/tableau-svgrepo-com.svg" alt="Tableau" width=100 height=50>Tableau](https://www.tableau.com/) | [<img src="/assets/images/tech/Power_BI.svg" alt="PowerBI" width=20 height=20> PowerBI](https://www.microsoft.com/en-us/power-platform/products/power-bi)
 
 ### MLOps & Workflow Orchestration
 
-**Version Control**: | [<img src="/assets/images/Git.svg" alt="Git" width=20 height=20> Git](https://git-scm.com) | [<img src="/assets/images/GitHub.svg" alt="GitHub" width=20 height=20> GitHub](https://github.com) | [<img src="/assets/images/dvc-svgrepo-com.svg" alt="Data Version Control (DVC)" width=20 height=20> (Familiar with) Data Version Control (DVC)](https://dvc.org)
-**Pipeline Orchestration**: | [<img src="/assets/images/Apache Airflow.svg" alt="Airflow" width=20 height=20> (Planning to work with) Airflow](https://airflow.apache.org) | [<img src="/assets/images/kubeflow-seeklogo.svg" alt="Kubeflow" width=30 height=30> (Planning to work with) Kubeflow](https://www.kubeflow.org)
+**Version Control**: | [<img src="/assets/images/tech/Git.svg" alt="Git" width=20 height=20> Git](https://git-scm.com) | [<img src="/assets/images/tech/GitHub.svg" alt="GitHub" width=20 height=20> GitHub](https://github.com) | [<img src="/assets/images/tech/dvc-svgrepo-com.svg" alt="Data Version Control (DVC)" width=20 height=20> (Familiar with) Data Version Control (DVC)](https://dvc.org)
+**Pipeline Orchestration**: | [<img src="/assets/images/tech/Apache Airflow.svg" alt="Airflow" width=20 height=20> (Planning to work with) Airflow](https://airflow.apache.org) | [<img src="/assets/images/tech/kubeflow-seeklogo.svg" alt="Kubeflow" width=30 height=30> (Planning to work with) Kubeflow](https://www.kubeflow.org)
 
 <!-- ## <i class="fa fa-bar-chart" aria-hidden="true"></i> Mathematical & Statistical Knowledge
 
